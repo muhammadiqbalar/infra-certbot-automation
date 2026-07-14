@@ -1,0 +1,14 @@
+Objective
+
+Automate Let's Encrypt certificate deployment from Ubuntu to Windows Apache.
+
+Features
+
+- Check Expired
+- Renew
+- Validate
+- Backup
+- Copy Certificate
+- Restart Apache or nginx
+- Health Check
+- Notification
