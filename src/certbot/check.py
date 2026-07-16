@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from cryptography import x509
@@ -18,13 +18,17 @@ class CertificateInfo:
     valid_from:datetime
     valid_until:datetime
 
-def check_certificate():
+def check_certificate(cert_path:Path):
+
+
     certificate = load_certificate(cert_path)
     info = get_certificate_info(certificate)
+    remaining_days = calculate_remaining_days(info.valid_until)
 
-    print(info.subject)
-    print(info.issuer)
-    print(info.valid_until)
+    print(f"Domain name: {info.subject}")
+    print(f"Issued By: {info.issuer}")
+    print(f"Expired On :{info.valid_until}")
+    print(f"Expired left days:{remaining_days}")
 
 def load_certificate(cert_path: Path) -> x509.Certificate:
 
@@ -68,11 +72,24 @@ def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
 	subject=certificate.subject.rfc4514_string(),
 	issuer=certificate.issuer.rfc4514_string(),
 	serial_number=str(certificate.serial_number),
-	valid_from=certificate.not_valid_before,
-	valid_until=certificate.not_valid_after,
+	valid_from=certificate.not_valid_before_utc,
+	valid_until=certificate.not_valid_after_utc,
  	
     )
 
+def calculate_remaining_days(valid_until: datetime) -> int:
+    """
+    Calculate remaining days untul certificate expiration.
+
+    Args:
+    	valid_until: certificate expiration datetime.
+    Return:
+	Number of Remaining days.
+    """
+    today = datetime.now(timezone.utc)
+    remaining = valid_until - today
+
+    return remaining.days
 
 
 
@@ -90,5 +107,5 @@ def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
 
 
 
-    )
+
 

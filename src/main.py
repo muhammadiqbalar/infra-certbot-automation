@@ -1,5 +1,5 @@
 import argparse
-
+from pathlib import Path
 from certbot.check import check_certificate
 
 
@@ -17,6 +17,7 @@ def main():
 
 	check_parser.add_argument(
 		"--cert",
+		type=Path,
 		required=True,
 		help="Certificate path"
 	)
