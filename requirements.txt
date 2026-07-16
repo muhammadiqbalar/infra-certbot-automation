@@ -1,14 +1,3 @@
-Objective
-
-Automate Let's Encrypt certificate deployment from Ubuntu to Windows Apache or Nginx.
-
-Features
-
-- Check Expired
-- Renew
-- Validate
-- Backup
-- Copy Certificate
-- Restart Apache or Nginx
-- Health Check
-- Notification
+cffi==2.1.0
+cryptography==49.0.0
+pycparser==3.0
