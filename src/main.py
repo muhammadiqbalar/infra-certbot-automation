@@ -1,21 +1,31 @@
 import argparse
 
+from certbot.check import check_certificate
+
+
 def main():
+
 	parser = argparse.ArgumentParser(
 	 description ="Infrastructure Certbot Automation"
 	)
 
-	parser.add_argument(
-	 "command",
-	 choices=["check"],
-	 help="Command to execute"
+	subparser = parser.add_subparsers(dest="command")
+
+
+	check_parser = subparser.add_parser("check")
+
+
+	check_parser.add_argument(
+		"--cert",
+		required=True,
+		help="Certificate path"
 	)
+
 
 	args = parser.parse_args()
 
-
 	if args.command == "check":
-		print("Certificate Checker")
+		check_certificate(args.cert)
 
 if __name__ == "__main__":
    main()
