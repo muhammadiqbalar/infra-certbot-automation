@@ -1,20 +1,31 @@
+from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
+
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 
-def check_certificate(cert_path: str):
+
+
+@dataclass
+class CertificateInfo:
     """
-    Check whether the certificate file exists and parse its details.
+    Store parsed certificate information
     """
-    cert_file = Path(cert_path)
+    subject: str
+    issuer:str
+    serial_number:str
+    valid_from:datetime
+    valid_until:datetime
 
-    if not cert_file.exists():
-        print(f"Error: Certificate file not found at {cert_path}")
-        return False
+def check_certificate():
+    certificate = load_certificate(cert_path)
+    info = get_certificate_info(certificate)
 
-    print("Certificate file found.")
+    print(info.subject)
+    print(info.issuer)
+    print(info.valid_until)
 
-    return True
 def load_certificate(cert_path: Path) -> x509.Certificate:
 
     """
@@ -44,3 +55,40 @@ def load_certificate(cert_path: Path) -> x509.Certificate:
         	f"Failed to parse certificate: {cert_path}"
         ) from err
     return certificate
+
+
+def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
+
+    """
+    Extract important information from  X.509 certificate.
+    """
+   
+    return CertificateInfo(
+
+	subject=certificate.subject.rfc4514_string(),
+	issuer=certificate.issuer.rfc4514_string(),
+	serial_number=str(certificate.serial_number),
+	valid_from=certificate.not_valid_before,
+	valid_until=certificate.not_valid_after,
+ 	
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    )
+
