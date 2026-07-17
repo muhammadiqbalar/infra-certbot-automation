@@ -1,0 +1,6 @@
+certificates:
+  - name: dms-dev
+    path: certs/fullchain.pem
+
+  - name: dms-prod
+    path: certs/prod/fullchain.pem

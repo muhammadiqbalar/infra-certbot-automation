@@ -1,0 +1,36 @@
+2026-07-17 14:11:13,241 | INFO | Starting certificate check
+2026-07-17 14:11:13,258 | INFO | Checking certificate: dms-dev
+2026-07-17 14:11:13,514 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:11:13,516 | INFO | Checking certificate: dms-prod
+2026-07-17 14:11:13,535 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:11:13,536 | INFO | Certificate check completed
+2026-07-17 14:11:35,928 | INFO | Starting certificate check
+2026-07-17 14:11:35,942 | INFO | Checking certificate: dms-dev
+2026-07-17 14:11:36,154 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:11:36,156 | INFO | Checking certificate: dms-prod
+2026-07-17 14:11:36,186 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:11:36,192 | INFO | Certificate check completed
+2026-07-17 14:30:25,893 | INFO | Starting certificate check
+2026-07-17 14:30:25,911 | INFO | Checking certificate: dms-dev
+2026-07-17 14:30:26,185 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:30:26,187 | INFO | Checking certificate: dms-prod
+2026-07-17 14:30:26,206 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:30:26,208 | INFO | Certificate check completed
+2026-07-17 14:30:57,077 | INFO | Starting certificate check
+2026-07-17 14:30:57,092 | INFO | Checking certificate: dms-dev
+2026-07-17 14:30:57,335 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:30:57,337 | INFO | Checking certificate: dms-prod
+2026-07-17 14:30:57,354 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:30:57,356 | INFO | Certificate check completed
+2026-07-17 14:38:18,460 | INFO | Starting certificate check
+2026-07-17 14:38:18,477 | INFO | Checking certificate: dms-dev
+2026-07-17 14:38:18,700 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:38:18,702 | INFO | Checking certificate: dms-prod
+2026-07-17 14:38:18,724 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:38:18,726 | INFO | Certificate check completed
+2026-07-17 14:38:33,231 | INFO | Starting certificate check
+2026-07-17 14:38:33,249 | INFO | Checking certificate: dms-dev
+2026-07-17 14:38:33,507 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 14:38:33,509 | INFO | Checking certificate: dms-prod
+2026-07-17 14:38:33,528 | INFO | nms.amsolusi.id | [32mVALID | 81 days
+2026-07-17 14:38:33,530 | INFO | Certificate check completed
