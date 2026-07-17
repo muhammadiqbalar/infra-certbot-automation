@@ -6,94 +6,113 @@ from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 
 
-
 @dataclass
 class CertificateInfo:
     """
-    Store parsed certificate information
+    Store parsed certificate information.
     """
     subject: str
-    issuer:str
-    serial_number:str
-    valid_from:datetime
-    valid_until:datetime
+    issuer: str
+    serial_number: str
+    valid_from: datetime
+    valid_until: datetime
+    remaining_days: int
+    status: str
 
-def check_certificate(cert_path:Path):
-
-
-    certificate = load_certificate(cert_path)
-    info = get_certificate_info(certificate)
-    remaining_days = calculate_remaining_days(info.valid_until)
-
-    print(f"Domain name: {info.subject}")
-    print(f"Issued By: {info.issuer}")
-    print(f"Expired On :{info.valid_until}")
-    print(f"Expired left days:{remaining_days}")
 
 def load_certificate(cert_path: Path) -> x509.Certificate:
-
     """
-    Load and parse a new PEM certificate.
+    Load and parse a PEM certificate.
 
     Args:
-	cert_path: Path to the PEM certificate.
+        cert_path: Path to the PEM certificate.
+
     Returns:
-        x509.Certificate: Parsed certificate object.
+        Parsed X.509 certificate.
+
     Raises:
         FileNotFoundError: If the certificate file does not exist.
-	ValueError: If the file is not a valid PEM certificate.
+        ValueError: If the certificate cannot be parsed.
     """
     if not cert_path.exists():
-       raise FileNotFoundError(
-       	f"Certificate file not found: {cert_path}"
-       )
+        raise FileNotFoundError(
+            f"Certificate file not found: {cert_path}"
+        )
+
     with cert_path.open("rb") as file:
-         cert_data = file.read()
+        cert_data = file.read()
+
     try:
-         certificate = x509.load_pem_x509_certificate(
-         	cert_data,
-		default_backend()
-         )
+        certificate = x509.load_pem_x509_certificate(
+            cert_data,
+            default_backend(),
+        )
     except Exception as err:
         raise ValueError(
-        	f"Failed to parse certificate: {cert_path}"
+            f"Failed to parse certificate: {cert_path}"
         ) from err
+
     return certificate
 
 
-def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
-
-    """
-    Extract important information from  X.509 certificate.
-    """
-   
-    return CertificateInfo(
-
-	subject=certificate.subject.rfc4514_string(),
-	issuer=certificate.issuer.rfc4514_string(),
-	serial_number=str(certificate.serial_number),
-	valid_from=certificate.not_valid_before_utc,
-	valid_until=certificate.not_valid_after_utc,
- 	
-    )
-
 def calculate_remaining_days(valid_until: datetime) -> int:
     """
-    Calculate remaining days untul certificate expiration.
-
-    Args:
-    	valid_until: certificate expiration datetime.
-    Return:
-	Number of Remaining days.
+    Calculate remaining days until certificate expiration.
     """
     today = datetime.now(timezone.utc)
-    remaining = valid_until - today
-
-    return remaining.days
+    return (valid_until - today).days
 
 
+def determine_status(remaining_days: int) -> str:
+    """
+    Determine certificate status.
+    """
+    if remaining_days < 0:
+        return "EXPIRED"
+    elif remaining_days <= 46:
+        return "WARNING"
+    else:
+        return "VALID"
 
 
+def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
+    """
+    Extract important information from an X.509 certificate.
+    """
+
+    valid_from = getattr(
+        certificate,
+        "not_valid_before_utc",
+        certificate.not_valid_before_utc,
+    )
+
+    valid_until = getattr(
+        certificate,
+        "not_valid_after_utc",
+        certificate.not_valid_after_utc,
+    )
+
+    remaining_days = calculate_remaining_days(valid_until)
+    status = determine_status(remaining_days)
+
+    return CertificateInfo(
+        subject=certificate.subject.rfc4514_string(),
+        issuer=certificate.issuer.rfc4514_string(),
+        serial_number=str(certificate.serial_number),
+        valid_from=valid_from,
+        valid_until=valid_until,
+        remaining_days=remaining_days,
+        status=status,
+    )
+
+
+def check_certificate(cert_path: str | Path) -> CertificateInfo:
+    """
+    Load a certificate and return its information.
+    """
+    cert_path = Path(cert_path)
+    certificate = load_certificate(cert_path)
+    return get_certificate_info(certificate)
 
 
 
