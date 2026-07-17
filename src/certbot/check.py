@@ -4,7 +4,7 @@ from pathlib import Path
 
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
-
+from cryptography.x509.oid import NameOID
 
 @dataclass
 class CertificateInfo:
@@ -12,6 +12,7 @@ class CertificateInfo:
     Store parsed certificate information.
     """
     subject: str
+    common_name: str
     issuer: str
     serial_number: str
     valid_from: datetime
@@ -97,6 +98,7 @@ def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
 
     return CertificateInfo(
         subject=certificate.subject.rfc4514_string(),
+        common_name=certificate.subject.get_attributes_for_oid(NameOID.COMMON_NAME)[0].value,
         issuer=certificate.issuer.rfc4514_string(),
         serial_number=str(certificate.serial_number),
         valid_from=valid_from,

@@ -31,14 +31,13 @@ def main():
 			print("Certificate Information")
 			print("=" * 60)
 
-			print(f"Subject         : {info.subject}")
+			print(f"Common Name     : {info.common_name}")
 			print(f"Issuer          : {info.issuer}")
 			print(f"Serial Number   : {info.serial_number}")
 			print(f"Valid From      : {info.valid_from}")
 			print(f"Valid Until     : {info.valid_until}")
 			print(f"Remaining Days  : {info.remaining_days}")
 			print(f"Status          : {info.status}")
-	
 	except Exception as err:
 		print(f"ERROR : {err}")
 if __name__ == "__main__":
