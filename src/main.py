@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 from certbot.check import check_certificate
-from colorama import Fore
+
 
 def main():
 
@@ -37,7 +37,7 @@ def main():
 			print(f"Valid From      : {info.valid_from}")
 			print(f"Valid Until     : {info.valid_until}")
 			print(f"Remaining Days  : {info.remaining_days}")
-			print(f"Status          : {Fore.GREEN + info.status}")
+			print(f"Status          : {info.status}")
 	except Exception as err:
 		print(f"ERROR : {err}")
 if __name__ == "__main__":

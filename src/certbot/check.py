@@ -5,6 +5,7 @@ from pathlib import Path
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.x509.oid import NameOID
+from colorama import Fore
 
 @dataclass
 class CertificateInfo:
@@ -69,11 +70,11 @@ def determine_status(remaining_days: int) -> str:
     Determine certificate status.
     """
     if remaining_days < 0:
-        return "EXPIRED"
+        return (Fore.RED+"EXPIRED")
     elif remaining_days <= 46:
-        return "WARNING"
+        return (Fore.YELLOW+"WARNING")
     else:
-        return "VALID"
+        return (Fore.GREEN+"VALID")
 
 
 def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
