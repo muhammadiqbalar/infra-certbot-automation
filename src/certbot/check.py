@@ -7,19 +7,18 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.x509.oid import NameOID
 from colorama import Fore
 
-@dataclass
-class CertificateInfo:
-    """
-    Store parsed certificate information.
-    """
-    subject: str
-    common_name: str
-    issuer: str
-    serial_number: str
-    valid_from: datetime
-    valid_until: datetime
-    remaining_days: int
-    status: str
+from models.certificate import CertificateInfo
+from certbot.parser import (
+    get_common_name,
+    get_subject,
+    get_issuer,
+    get_serial_number,
+    get_dns_names,
+    get_signature_algorithm,
+    get_public_key_algorithm,
+    get_key_size,
+)
+from models.status import CertificateStatus
 
 
 def load_certificate(cert_path: Path) -> x509.Certificate:
@@ -65,16 +64,16 @@ def calculate_remaining_days(valid_until: datetime) -> int:
     return (valid_until - today).days
 
 
-def determine_status(remaining_days: int) -> str:
+def determine_status(remaining_days: int) -> CertificateStatus:
     """
     Determine certificate status.
     """
-    if remaining_days < 0:
-        return (Fore.RED+"EXPIRED")
+    if remaining_days <= 0:
+        return CertificateStatus.EXPIRED
     elif remaining_days <= 46:
-        return (Fore.YELLOW+"WARNING")
+        return CertificateStatus.WARNING
     else:
-        return (Fore.GREEN+"VALID")
+        return CertificateStatus.VALID
 
 
 def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
@@ -97,7 +96,7 @@ def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
     remaining_days = calculate_remaining_days(valid_until)
     status = determine_status(remaining_days)
 
-    return CertificateInfo(
+    """return CertificateInfo(
         subject=certificate.subject.rfc4514_string(),
         common_name=certificate.subject.get_attributes_for_oid(NameOID.COMMON_NAME)[0].value,
         issuer=certificate.issuer.rfc4514_string(),
@@ -106,7 +105,30 @@ def get_certificate_info(certificate: x509.Certificate) -> CertificateInfo:
         valid_until=valid_until,
         remaining_days=remaining_days,
         status=status,
-    )
+    )"""
+    common_name = get_common_name(certificate)
+    subject = get_subject(certificate)
+    issuer = get_issuer(certificate)
+    serial_number = get_serial_number(certificate)
+    dns_names = get_dns_names(certificate)
+    signature_algorithm = get_signature_algorithm(certificate)
+    public_key_algorithm = get_public_key_algorithm(certificate)
+    key_size = get_key_size(certificate)
+
+    return CertificateInfo(
+      subject=subject,
+      common_name=common_name,
+      issuer=issuer,
+      serial_number=serial_number,
+      valid_from=valid_from,
+      valid_until=valid_until,
+      remaining_days=remaining_days,
+      status=status,
+      dns_names=dns_names,
+      signature_algorithm=signature_algorithm,
+      public_key_algorithm=public_key_algorithm,
+      key_size=key_size,
+   )
 
 
 def check_certificate(cert_path: str | Path) -> CertificateInfo:

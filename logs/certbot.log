@@ -34,3 +34,199 @@
 2026-07-17 14:38:33,509 | INFO | Checking certificate: dms-prod
 2026-07-17 14:38:33,528 | INFO | nms.amsolusi.id | [32mVALID | 81 days
 2026-07-17 14:38:33,530 | INFO | Certificate check completed
+2026-07-17 15:06:50,872 | INFO | Starting certificate check
+2026-07-17 15:06:50,887 | INFO | Checking certificate: dms-dev
+2026-07-17 15:06:51,146 | ERROR | CertificateInfo.__init__() got an unexpected keyword argument 'subject'
+2026-07-17 15:06:51,148 | INFO | Checking certificate: dms-prod
+2026-07-17 15:06:51,168 | ERROR | CertificateInfo.__init__() got an unexpected keyword argument 'subject'
+2026-07-17 15:06:51,170 | INFO | Certificate check completed
+2026-07-17 15:11:39,118 | INFO | Starting certificate check
+2026-07-17 15:11:39,133 | INFO | Checking certificate: dms-dev
+2026-07-17 15:11:39,421 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 15:11:39,423 | INFO | Checking certificate: dms-prod
+2026-07-17 15:11:39,442 | INFO | nms.amsolusi.id | [32mVALID | 80 days
+2026-07-17 15:11:39,443 | INFO | Certificate check completed
+2026-07-17 15:13:42,382 | INFO | Starting certificate check
+2026-07-17 15:13:42,399 | INFO | Checking certificate: dms-dev
+2026-07-17 15:13:42,696 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 15:13:42,698 | INFO | Checking certificate: dms-prod
+2026-07-17 15:13:42,720 | INFO | nms.amsolusi.id | [32mVALID | 80 days
+2026-07-17 15:13:42,721 | INFO | Certificate check completed
+2026-07-17 16:35:14,237 | INFO | Starting certificate check
+2026-07-17 16:35:14,252 | INFO | Checking certificate: dms-dev
+2026-07-17 16:35:14,492 | ERROR | name 'subject' is not defined
+2026-07-17 16:35:14,494 | INFO | Checking certificate: dms-prod
+2026-07-17 16:35:14,527 | ERROR | name 'subject' is not defined
+2026-07-17 16:35:14,528 | INFO | Certificate check completed
+2026-07-17 16:42:00,856 | INFO | Starting certificate check
+2026-07-17 16:42:00,886 | INFO | Checking certificate: dms-dev
+2026-07-17 16:42:01,140 | ERROR | name 'subject' is not defined
+2026-07-17 16:42:01,141 | INFO | Checking certificate: dms-prod
+2026-07-17 16:42:01,160 | ERROR | name 'subject' is not defined
+2026-07-17 16:42:01,162 | INFO | Certificate check completed
+2026-07-17 16:44:00,375 | INFO | Starting certificate check
+2026-07-17 16:44:00,395 | INFO | Checking certificate: dms-dev
+2026-07-17 16:44:00,695 | ERROR | name 'subject' is not defined
+2026-07-17 16:44:00,697 | INFO | Checking certificate: dms-prod
+2026-07-17 16:44:00,720 | ERROR | name 'subject' is not defined
+2026-07-17 16:44:00,722 | INFO | Certificate check completed
+2026-07-17 16:45:00,141 | INFO | Starting certificate check
+2026-07-17 16:45:00,170 | INFO | Checking certificate: dms-dev
+2026-07-17 16:45:00,421 | ERROR | name 'get_subject' is not defined
+2026-07-17 16:45:00,423 | INFO | Checking certificate: dms-prod
+2026-07-17 16:45:00,447 | ERROR | name 'get_subject' is not defined
+2026-07-17 16:45:00,449 | INFO | Certificate check completed
+2026-07-17 16:45:53,507 | INFO | Starting certificate check
+2026-07-17 16:45:53,524 | INFO | Checking certificate: dms-dev
+2026-07-17 16:45:53,775 | ERROR | name 'common_name' is not defined
+2026-07-17 16:45:53,777 | INFO | Checking certificate: dms-prod
+2026-07-17 16:45:53,797 | ERROR | name 'common_name' is not defined
+2026-07-17 16:45:53,799 | INFO | Certificate check completed
+2026-07-17 16:55:33,373 | INFO | Starting certificate check
+2026-07-17 16:55:33,401 | INFO | Checking certificate: dms-dev
+2026-07-17 16:55:33,695 | ERROR | CertificateInfo.__init__() got an unexpected keyword argument 'signature_algorithm'
+2026-07-17 16:55:33,698 | INFO | Checking certificate: dms-prod
+2026-07-17 16:55:33,731 | ERROR | CertificateInfo.__init__() got an unexpected keyword argument 'signature_algorithm'
+2026-07-17 16:55:33,735 | INFO | Certificate check completed
+2026-07-17 16:58:28,486 | INFO | Starting certificate check
+2026-07-17 16:58:28,515 | INFO | Checking certificate: dms-dev
+2026-07-17 16:58:28,771 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 16:58:28,774 | INFO | Checking certificate: dms-prod
+2026-07-17 16:58:28,787 | INFO | nms.amsolusi.id | [32mVALID | 80 days
+2026-07-17 16:58:28,789 | INFO | Certificate check completed
+2026-07-17 16:59:11,340 | INFO | Starting certificate check
+2026-07-17 16:59:11,355 | INFO | Checking certificate: dms-dev
+2026-07-17 16:59:11,603 | INFO | dms-dev.mpi-apps.co.id | [33mWARNING | 44 days
+2026-07-17 16:59:11,605 | INFO | Checking certificate: dms-prod
+2026-07-17 16:59:11,623 | INFO | nms.amsolusi.id | [32mVALID | 80 days
+2026-07-17 16:59:11,626 | INFO | Certificate check completed
+2026-07-17 17:19:04,068 | INFO | Starting certificate check
+2026-07-17 17:19:04,083 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:19:04,379 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:19:04,382 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:19:04,402 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:19:04,405 | INFO | Certificate check completed
+2026-07-17 17:29:02,684 | INFO | Starting certificate check
+2026-07-17 17:29:02,702 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:29:02,978 | ERROR | type object 'CertificateStatus' has no attribute 'Warning'
+2026-07-17 17:29:02,981 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:29:03,006 | ERROR | type object 'CertificateStatus' has no attribute 'Valid'
+2026-07-17 17:29:03,009 | INFO | Certificate check completed
+2026-07-17 17:31:27,330 | INFO | Starting certificate check
+2026-07-17 17:31:27,346 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:31:27,617 | ERROR | can only concatenate str (not "set") to str
+2026-07-17 17:31:27,620 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:31:27,648 | ERROR | can only concatenate str (not "set") to str
+2026-07-17 17:31:27,650 | INFO | Certificate check completed
+2026-07-17 17:36:37,817 | INFO | Starting certificate check
+2026-07-17 17:36:37,843 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:36:38,214 | ERROR | can only concatenate str (not "CertificateStatus") to str
+2026-07-17 17:36:38,218 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:36:38,258 | ERROR | can only concatenate str (not "CertificateStatus") to str
+2026-07-17 17:36:38,262 | INFO | Certificate check completed
+2026-07-17 17:37:24,291 | INFO | Starting certificate check
+2026-07-17 17:37:24,325 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:37:24,667 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:37:24,669 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:37:24,703 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:37:24,705 | INFO | Certificate check completed
+2026-07-17 17:39:19,962 | INFO | Starting certificate check
+2026-07-17 17:39:19,982 | INFO | [dms-dev] Checking certificate
+2026-07-17 17:39:20,356 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:39:20,359 | INFO | [dms-prod] Checking certificate
+2026-07-17 17:39:20,392 | ERROR | 'str' object has no attribute 'value'
+2026-07-17 17:39:20,396 | INFO | Certificate check completed
+2026-07-20 08:43:55,237 | INFO | Starting certificate check
+2026-07-20 08:43:55,255 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:43:55,577 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 08:43:55,579 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:43:55,599 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 08:43:55,601 | INFO | Certificate check completed
+2026-07-20 08:50:04,789 | INFO | Starting certificate check
+2026-07-20 08:50:04,793 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:50:04,848 | ERROR | name 'colorize_status' is not defined
+2026-07-20 08:50:04,849 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:50:04,856 | ERROR | name 'colorize_status' is not defined
+2026-07-20 08:50:04,857 | INFO | Certificate check completed
+2026-07-20 08:53:40,351 | INFO | Starting certificate check
+2026-07-20 08:53:40,359 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:53:40,429 | ERROR | name 'colorize_status' is not defined
+2026-07-20 08:53:40,430 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:53:40,437 | ERROR | name 'colorize_status' is not defined
+2026-07-20 08:53:40,438 | INFO | Certificate check completed
+2026-07-20 08:55:54,033 | INFO | Starting certificate check
+2026-07-20 08:55:54,038 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:55:54,093 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:55:54,094 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:55:54,095 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:55:54,101 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:55:54,101 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:55:54,102 | INFO | Certificate check completed
+2026-07-20 08:56:12,825 | INFO | Starting certificate check
+2026-07-20 08:56:12,831 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:56:12,887 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:56:12,888 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:56:12,889 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:56:12,898 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:56:12,898 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:56:12,899 | INFO | Certificate check completed
+2026-07-20 08:56:24,215 | INFO | Starting certificate check
+2026-07-20 08:56:24,222 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:56:24,286 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:56:24,287 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:56:24,288 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:56:24,293 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:56:24,294 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:56:24,294 | INFO | Certificate check completed
+2026-07-20 08:57:00,347 | INFO | Starting certificate check
+2026-07-20 08:57:00,352 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:57:00,412 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:57:00,413 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:57:00,414 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:57:00,419 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:57:00,420 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:57:00,420 | INFO | Certificate check completed
+2026-07-20 08:57:40,629 | INFO | Starting certificate check
+2026-07-20 08:57:40,634 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:57:40,691 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:57:40,692 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:57:40,693 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:57:40,701 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:57:40,702 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:57:40,703 | INFO | Certificate check completed
+2026-07-20 08:58:35,865 | INFO | Starting certificate check
+2026-07-20 08:58:35,871 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:58:35,929 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:58:35,930 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:58:35,931 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:58:35,936 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:58:35,937 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:58:35,938 | INFO | Certificate check completed
+2026-07-20 08:59:53,126 | INFO | Starting certificate check
+2026-07-20 08:59:53,133 | INFO | [dms-dev] Checking certificate
+2026-07-20 08:59:53,225 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 08:59:53,226 | INFO | [dms-dev] Status: WARNING
+2026-07-20 08:59:53,227 | INFO | [dms-prod] Checking certificate
+2026-07-20 08:59:53,236 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 08:59:53,237 | INFO | [dms-prod] Status: VALID
+2026-07-20 08:59:53,238 | INFO | Certificate check completed
+2026-07-20 09:00:58,839 | INFO | Starting certificate check
+2026-07-20 09:00:58,849 | INFO | [dms-dev] Checking certificate
+2026-07-20 09:00:58,937 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 09:00:58,938 | INFO | [dms-prod] Checking certificate
+2026-07-20 09:00:58,946 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 09:00:58,947 | INFO | Certificate check completed
+2026-07-20 09:01:06,577 | INFO | Starting certificate check
+2026-07-20 09:01:06,590 | INFO | [dms-dev] Checking certificate
+2026-07-20 09:01:06,658 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 09:01:06,659 | INFO | [dms-prod] Checking certificate
+2026-07-20 09:01:06,665 | ERROR | 'str' object has no attribute 'value'
+2026-07-20 09:01:06,666 | INFO | Certificate check completed
+2026-07-20 09:01:41,110 | INFO | Starting certificate check
+2026-07-20 09:01:41,120 | INFO | [dms-dev] Checking certificate
+2026-07-20 09:01:41,231 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 09:01:41,232 | INFO | [dms-dev] Status: WARNING
+2026-07-20 09:01:41,233 | INFO | [dms-prod] Checking certificate
+2026-07-20 09:01:41,243 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 09:01:41,245 | INFO | [dms-prod] Status: VALID
+2026-07-20 09:01:41,246 | INFO | Certificate check completed

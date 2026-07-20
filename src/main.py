@@ -32,16 +32,15 @@ def run_check() -> None:
         try:
             cert_path = BASE_DIR / cert["path"]
 
-            logger.info(f"Checking certificate: {cert['name']}")
+            logger.info(f"[{cert['name']}] Checking certificate")
 
             info = check_certificate(cert_path)
 
             print_certificate(info)
 
-            logger.info(f"{info.common_name} | "
-                   f"{info.status} | "
-                   f"{info.remaining_days} days"
-            )
+            logger.info(f"[{cert['name']}] Remaining Days: {info.remaining_days}")
+            
+            logger.info(f"[{cert['name']}] Status: {info.status.value}")
         except Exception as err:
             logger.error(err)
             print_error(err)
