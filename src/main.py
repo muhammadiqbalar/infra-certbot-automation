@@ -7,13 +7,15 @@ from utils.output import (
     print_certificate,
     print_error,
     print_header,
+    print_summary,
+    
 )
 
 from models.summary import Summary
 from report.summary import (
     update_summary,
     update_error,
-    print_summary,
+    
 )
 
 

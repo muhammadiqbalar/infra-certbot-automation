@@ -1,19 +1,23 @@
 from colorama import Fore, Style
 from models.status import CertificateStatus
 from  datetime import datetime
+from config.constants import DATE_FORMAT
+
+status_colors = {
+    "VALID": Fore.GREEN,
+    "WARNING": Fore.YELLOW,
+    "CRITICAL": Fore.MAGENTA,
+    "EXPIRED": Fore.RED,    
+}
 
 
-def colorize_status(status: CertificateStatus) -> str:
 
-    colors ={
-    	CertificateStatus.VALID: Fore.GREEN,
-        CertificateStatus.WARNING: Fore.YELLOW,
-        CertificateStatus.CRITICAL: Fore.MAGENTA,
-        CertificateStatus.EXPIRED: Fore.RED,    
-    }
+def colorize_status(status: str) -> str:
 
-    color = colors.get(status, Fore.WHITE)
-    return f"{color}{status.value}{Style.RESET_ALL}"
+    color = status_colors.get(status, Fore.WHITE)
+    return f"{color}{status}{Style.RESET_ALL}"
+
+
 
 def format_datetime(dt: datetime) -> str:
     """
@@ -25,4 +29,4 @@ def format_datetime(dt: datetime) -> str:
     if dt is None:
        return "-"
 
-    return dt.strftime("%Y-%m-%d %H:%M UTC")
+    return dt.strftime(DATE_FORMAT)

@@ -18,6 +18,12 @@ from certbot.parser import (
     get_public_key_algorithm,
     get_key_size,
 )
+
+from config.constants import(
+ WARNING_DAYS,
+ CRITICAL_DAYS,
+)
+
 from models.status import CertificateStatus
 
 
@@ -70,8 +76,10 @@ def determine_status(remaining_days: int) -> CertificateStatus:
     """
     if remaining_days <= 0:
         return CertificateStatus.EXPIRED
-    elif remaining_days <= 46:
+    elif remaining_days <= WARNING_DAYS:
         return CertificateStatus.WARNING
+    elif remaining_days <= CRITICAL_DAYS:
+        return CertificateStatus.CRITICAL
     else:
         return CertificateStatus.VALID
 

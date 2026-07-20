@@ -386,3 +386,556 @@
 2026-07-20 10:39:20,540 | INFO | [dms-prod] Remaining Days: 78
 2026-07-20 10:39:20,541 | INFO | [dms-prod] Status: VALID
 2026-07-20 10:39:20,541 | INFO | Certificate check completed
+2026-07-20 10:45:43,874 | INFO | Starting certificate check
+2026-07-20 10:45:43,879 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:45:43,935 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:45:43,938 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:45:43,945 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:45:43,946 | INFO | Certificate check completed
+2026-07-20 10:46:44,510 | INFO | Starting certificate check
+2026-07-20 10:46:44,516 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:46:44,572 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:46:44,573 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:46:44,580 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:48:48,304 | INFO | Starting certificate check
+2026-07-20 10:48:48,309 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:48:48,378 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:48:48,379 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:48:48,385 | ERROR | 'list' object has no attribute 'get'
+2026-07-20 10:50:14,340 | INFO | Starting certificate check
+2026-07-20 10:50:14,345 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:50:14,406 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:50:14,407 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:50:14,414 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:52:03,549 | INFO | Starting certificate check
+2026-07-20 10:52:03,554 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:52:03,610 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:52:03,611 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:52:03,617 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:53:58,774 | INFO | Starting certificate check
+2026-07-20 10:53:58,779 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:53:58,836 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:53:58,837 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:53:58,844 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:55:11,002 | INFO | Starting certificate check
+2026-07-20 10:55:11,007 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:55:11,062 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:55:11,063 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:55:11,069 | ERROR | 'set' object has no attribute 'get'
+2026-07-20 10:59:58,585 | INFO | Starting certificate check
+2026-07-20 10:59:58,590 | INFO | [dms-dev] Checking certificate
+2026-07-20 10:59:58,649 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 10:59:58,650 | INFO | [dms-dev] Status: WARNING
+2026-07-20 10:59:58,651 | INFO | [dms-prod] Checking certificate
+2026-07-20 10:59:58,657 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 10:59:58,657 | INFO | [dms-prod] Status: VALID
+2026-07-20 10:59:58,658 | INFO | Certificate check completed
+2026-07-20 11:00:38,559 | INFO | Starting certificate check
+2026-07-20 11:00:38,568 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:00:38,638 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:00:38,640 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:00:38,641 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:00:38,647 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:00:38,648 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:00:38,649 | INFO | Certificate check completed
+2026-07-20 11:01:07,099 | INFO | Starting certificate check
+2026-07-20 11:01:07,104 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:01:07,159 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:01:07,160 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:01:07,161 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:01:07,166 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:01:07,167 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:01:07,168 | INFO | Certificate check completed
+2026-07-20 11:01:54,885 | INFO | Starting certificate check
+2026-07-20 11:01:54,890 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:01:54,943 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:01:54,944 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:01:54,945 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:01:54,951 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:01:54,952 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:01:54,952 | INFO | Certificate check completed
+2026-07-20 11:02:44,284 | INFO | Starting certificate check
+2026-07-20 11:02:44,289 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:02:44,345 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:02:44,346 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:02:44,347 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:02:44,354 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:02:44,355 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:02:44,355 | INFO | Certificate check completed
+2026-07-20 11:03:09,753 | INFO | Starting certificate check
+2026-07-20 11:03:09,758 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:03:09,816 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:03:09,817 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:03:09,818 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:03:09,826 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:03:09,827 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:03:09,828 | INFO | Certificate check completed
+2026-07-20 11:03:25,545 | INFO | Starting certificate check
+2026-07-20 11:03:25,551 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:03:25,606 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:03:25,607 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:03:25,608 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:03:25,614 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:03:25,615 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:03:25,615 | INFO | Certificate check completed
+2026-07-20 11:04:03,299 | INFO | Starting certificate check
+2026-07-20 11:04:03,304 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:04:03,357 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:04:03,358 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:04:03,360 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:04:03,372 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:04:03,373 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:04:03,374 | INFO | Certificate check completed
+2026-07-20 11:04:30,216 | INFO | Starting certificate check
+2026-07-20 11:04:30,221 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:04:30,287 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:04:30,288 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:04:30,289 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:04:30,294 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:04:30,295 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:04:30,296 | INFO | Certificate check completed
+2026-07-20 11:05:19,543 | INFO | Starting certificate check
+2026-07-20 11:05:19,548 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:05:19,603 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:05:19,604 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:05:19,605 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:05:19,610 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:05:19,611 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:05:19,611 | INFO | Certificate check completed
+2026-07-20 11:07:02,426 | INFO | Starting certificate check
+2026-07-20 11:07:02,431 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:07:02,519 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:07:02,520 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:07:02,521 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:07:02,528 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:07:02,529 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:07:02,529 | INFO | Certificate check completed
+2026-07-20 11:07:08,822 | INFO | Starting certificate check
+2026-07-20 11:07:08,827 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:07:08,910 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:07:08,911 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:07:08,912 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:07:08,922 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:07:08,923 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:07:08,924 | INFO | Certificate check completed
+2026-07-20 11:21:16,339 | INFO | Starting certificate check
+2026-07-20 11:21:16,344 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:21:16,401 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:21:16,402 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:21:16,403 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:21:16,408 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:21:16,409 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:21:16,410 | INFO | Certificate check completed
+2026-07-20 11:22:18,366 | INFO | Starting certificate check
+2026-07-20 11:22:18,370 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:22:18,443 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:22:18,444 | INFO | [dms-dev] Status: WARNING
+2026-07-20 11:22:18,445 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:22:18,450 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:22:18,451 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:22:18,452 | INFO | Certificate check completed
+2026-07-20 11:27:14,329 | INFO | Starting certificate check
+2026-07-20 11:27:14,334 | INFO | [dms-dev] Checking certificate
+2026-07-20 11:27:14,391 | INFO | [dms-dev] Remaining Days: 42
+2026-07-20 11:27:14,392 | INFO | [dms-dev] Status: VALID
+2026-07-20 11:27:14,393 | INFO | [dms-prod] Checking certificate
+2026-07-20 11:27:14,398 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 11:27:14,399 | INFO | [dms-prod] Status: VALID
+2026-07-20 11:27:14,400 | INFO | Certificate check completed
+2026-07-20 12:16:52,044 | INFO | Starting certificate check
+2026-07-20 12:16:52,069 | INFO | [dms-dev] Checking certificate
+2026-07-20 12:16:52,402 | ERROR | 'CertificateInfo' object has no attribute 'dns_name'
+2026-07-20 12:16:52,404 | INFO | [dms-prod] Checking certificate
+2026-07-20 12:16:52,433 | ERROR | 'CertificateInfo' object has no attribute 'dns_name'
+2026-07-20 12:16:52,437 | INFO | Certificate check completed
+2026-07-20 12:51:50,242 | INFO | Starting certificate check
+2026-07-20 12:51:50,263 | INFO | [dms-dev] Checking certificate
+2026-07-20 12:51:50,549 | ERROR | name 'values' is not defined
+2026-07-20 12:51:50,551 | INFO | [dms-prod] Checking certificate
+2026-07-20 12:51:50,572 | ERROR | name 'values' is not defined
+2026-07-20 12:51:50,573 | INFO | Certificate check completed
+2026-07-20 12:53:57,979 | INFO | Starting certificate check
+2026-07-20 12:53:58,000 | INFO | [dms-dev] Checking certificate
+2026-07-20 12:53:58,306 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 12:53:58,308 | INFO | [dms-dev] Status: VALID
+2026-07-20 12:53:58,310 | INFO | [dms-prod] Checking certificate
+2026-07-20 12:53:58,333 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 12:53:58,335 | INFO | [dms-prod] Status: VALID
+2026-07-20 12:53:58,337 | INFO | Certificate check completed
+2026-07-20 13:01:10,634 | INFO | Starting certificate check
+2026-07-20 13:01:10,649 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:01:10,927 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:01:10,929 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:01:10,931 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:01:10,952 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:01:10,954 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:04:53,868 | INFO | Starting certificate check
+2026-07-20 13:04:53,879 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:04:54,102 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:04:54,104 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:04:54,107 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:04:54,129 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:04:54,133 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:05:45,493 | INFO | Starting certificate check
+2026-07-20 13:05:45,513 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:05:45,803 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:05:45,812 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:05:45,816 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:05:45,841 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:05:45,842 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:05:45,845 | INFO | Certificate check completed
+2026-07-20 13:13:26,456 | INFO | Starting certificate check
+2026-07-20 13:13:26,487 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:13:26,823 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:13:26,826 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:13:26,829 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:13:26,856 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:13:26,858 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:13:26,861 | INFO | Certificate check completed
+2026-07-20 13:17:31,959 | INFO | Starting certificate check
+2026-07-20 13:17:31,974 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:17:32,262 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:17:32,264 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:17:32,267 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:17:32,287 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:17:32,290 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:17:52,257 | INFO | Starting certificate check
+2026-07-20 13:17:52,273 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:17:52,533 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:17:52,536 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:17:52,539 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:17:52,558 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:17:52,561 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:18:54,697 | INFO | Starting certificate check
+2026-07-20 13:18:54,714 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:18:54,961 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:18:54,962 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:18:54,965 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:18:54,980 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:18:54,981 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:19:08,819 | INFO | Starting certificate check
+2026-07-20 13:19:08,839 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:19:09,143 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:19:09,145 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:19:09,148 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:19:09,174 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:19:09,178 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:19:43,541 | INFO | Starting certificate check
+2026-07-20 13:19:43,562 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:19:43,786 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:19:43,789 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:19:43,792 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:19:43,807 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:19:43,809 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:21:47,402 | INFO | Starting certificate check
+2026-07-20 13:21:47,421 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:21:47,711 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:21:47,716 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:21:47,718 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:21:47,742 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:21:47,745 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:22:47,883 | INFO | Starting certificate check
+2026-07-20 13:22:47,905 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:22:48,235 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:22:48,238 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:22:48,241 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:22:48,263 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:22:48,265 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:22:48,267 | INFO | Certificate check completed
+2026-07-20 13:28:29,920 | INFO | Starting certificate check
+2026-07-20 13:28:29,939 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:28:30,230 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:28:30,232 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:28:30,234 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:28:30,256 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:28:30,258 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:28:30,262 | INFO | Certificate check completed
+2026-07-20 13:30:10,719 | INFO | Starting certificate check
+2026-07-20 13:30:10,736 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:30:11,065 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:30:11,066 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:30:11,068 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:30:11,084 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:30:11,086 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:30:11,088 | INFO | Certificate check completed
+2026-07-20 13:31:42,334 | INFO | Starting certificate check
+2026-07-20 13:31:42,352 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:31:42,652 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:31:42,654 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:31:42,656 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:31:42,679 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:31:42,681 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:31:42,684 | INFO | Certificate check completed
+2026-07-20 13:32:05,813 | INFO | Starting certificate check
+2026-07-20 13:32:05,838 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:32:06,131 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:32:06,133 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:32:06,135 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:32:06,155 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:32:06,157 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:32:06,160 | INFO | Certificate check completed
+2026-07-20 13:32:33,192 | INFO | Starting certificate check
+2026-07-20 13:32:33,212 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:32:33,488 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:32:33,490 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:32:33,492 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:32:33,515 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:32:33,517 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:32:33,519 | INFO | Certificate check completed
+2026-07-20 13:33:30,590 | INFO | Starting certificate check
+2026-07-20 13:33:30,609 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:33:30,898 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:33:30,901 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:33:30,902 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:33:30,925 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:33:30,927 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:33:30,929 | INFO | Certificate check completed
+2026-07-20 13:34:08,255 | INFO | Starting certificate check
+2026-07-20 13:34:08,269 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:34:08,524 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:34:08,526 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:34:08,528 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:34:08,553 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:34:08,556 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:34:08,559 | INFO | Certificate check completed
+2026-07-20 13:34:35,722 | INFO | Starting certificate check
+2026-07-20 13:34:35,746 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:34:36,035 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:34:36,037 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:34:36,040 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:34:36,069 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:34:36,071 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:34:36,074 | INFO | Certificate check completed
+2026-07-20 13:35:01,014 | INFO | Starting certificate check
+2026-07-20 13:35:01,048 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:35:01,320 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:35:01,323 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:35:01,325 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:35:01,347 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:35:01,349 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:35:01,352 | INFO | Certificate check completed
+2026-07-20 13:35:25,773 | INFO | Starting certificate check
+2026-07-20 13:35:25,790 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:35:26,057 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:35:26,059 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:35:26,061 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:35:26,079 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:35:26,081 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:35:26,082 | INFO | Certificate check completed
+2026-07-20 13:36:02,747 | INFO | Starting certificate check
+2026-07-20 13:36:02,773 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:36:03,051 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:36:03,053 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:36:03,054 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:36:03,068 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:36:03,070 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:36:03,072 | INFO | Certificate check completed
+2026-07-20 13:36:25,880 | INFO | Starting certificate check
+2026-07-20 13:36:25,900 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:36:26,166 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:36:26,168 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:36:26,169 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:36:26,192 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:36:26,194 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:36:26,195 | INFO | Certificate check completed
+2026-07-20 13:36:46,585 | INFO | Starting certificate check
+2026-07-20 13:36:46,602 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:36:46,908 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:36:46,910 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:36:46,912 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:36:46,935 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:36:46,937 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:36:46,939 | INFO | Certificate check completed
+2026-07-20 13:37:13,592 | INFO | Starting certificate check
+2026-07-20 13:37:13,610 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:37:13,877 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:37:13,880 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:37:13,882 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:37:13,909 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:37:13,911 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:37:13,913 | INFO | Certificate check completed
+2026-07-20 13:37:33,236 | INFO | Starting certificate check
+2026-07-20 13:37:33,252 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:37:33,429 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:37:33,430 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:37:33,432 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:37:33,441 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:37:33,442 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:37:33,444 | INFO | Certificate check completed
+2026-07-20 13:37:59,484 | INFO | Starting certificate check
+2026-07-20 13:37:59,501 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:37:59,758 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:37:59,760 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:37:59,762 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:37:59,784 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:37:59,786 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:37:59,788 | INFO | Certificate check completed
+2026-07-20 13:38:23,116 | INFO | Starting certificate check
+2026-07-20 13:38:23,138 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:38:23,464 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:38:23,466 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:38:23,468 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:38:23,496 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:38:23,498 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:38:23,500 | INFO | Certificate check completed
+2026-07-20 13:38:47,034 | INFO | Starting certificate check
+2026-07-20 13:38:47,058 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:38:47,348 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:38:47,350 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:38:47,352 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:38:47,386 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:38:47,388 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:38:47,390 | INFO | Certificate check completed
+2026-07-20 13:39:33,140 | INFO | Starting certificate check
+2026-07-20 13:39:33,160 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:39:33,430 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:39:33,432 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:39:33,434 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:39:33,456 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:39:33,458 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:39:33,460 | INFO | Certificate check completed
+2026-07-20 13:39:57,039 | INFO | Starting certificate check
+2026-07-20 13:39:57,057 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:39:57,317 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:39:57,319 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:39:57,321 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:39:57,344 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:39:57,346 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:39:57,348 | INFO | Certificate check completed
+2026-07-20 13:45:27,376 | INFO | Starting certificate check
+2026-07-20 13:45:27,384 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:45:27,568 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:45:27,571 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:45:27,574 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:45:27,594 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:45:27,596 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:46:00,560 | INFO | Starting certificate check
+2026-07-20 13:46:00,584 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:46:00,852 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:46:00,853 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:46:00,855 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:46:00,878 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:46:00,880 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:48:29,017 | INFO | Starting certificate check
+2026-07-20 13:48:29,035 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:48:29,355 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:48:29,357 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:48:29,359 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:48:29,388 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:48:29,392 | INFO | [dms-prod] Status: VALID
+2026-07-20 13:51:51,038 | INFO | Starting certificate check
+2026-07-20 13:51:51,058 | INFO | [dms-dev] Checking certificate
+2026-07-20 13:51:51,363 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 13:51:51,365 | INFO | [dms-dev] Status: VALID
+2026-07-20 13:51:51,367 | INFO | [dms-prod] Checking certificate
+2026-07-20 13:51:51,390 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 13:51:51,392 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:01:57,597 | INFO | Starting certificate check
+2026-07-20 14:01:57,616 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:01:57,897 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:01:57,899 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:01:57,901 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:01:57,924 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:01:57,926 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:01:57,928 | INFO | Certificate check completed
+2026-07-20 14:06:10,128 | INFO | Starting certificate check
+2026-07-20 14:06:10,150 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:06:10,477 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:06:10,478 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:06:10,480 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:06:10,503 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:06:10,507 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:07:54,558 | INFO | Starting certificate check
+2026-07-20 14:07:54,577 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:07:54,869 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:07:54,871 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:07:54,873 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:07:54,895 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:07:54,898 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:16:23,915 | INFO | Starting certificate check
+2026-07-20 14:16:23,933 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:16:24,280 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:16:24,282 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:16:24,284 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:16:24,305 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:16:24,315 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:23:14,836 | INFO | Starting certificate check
+2026-07-20 14:23:14,853 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:23:15,115 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:23:15,117 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:23:15,119 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:23:15,141 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:23:15,143 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:23:15,145 | INFO | Certificate check completed
+2026-07-20 14:24:27,333 | INFO | Starting certificate check
+2026-07-20 14:24:27,367 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:24:27,688 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:24:27,689 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:24:27,691 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:24:27,705 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:24:27,707 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:24:27,708 | INFO | Certificate check completed
+2026-07-20 14:24:56,962 | INFO | Starting certificate check
+2026-07-20 14:24:56,988 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:24:57,269 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:24:57,271 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:24:57,273 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:24:57,296 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:24:57,299 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:24:57,303 | INFO | Certificate check completed
+2026-07-20 14:25:16,433 | INFO | Starting certificate check
+2026-07-20 14:25:16,450 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:25:16,745 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:25:16,746 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:25:16,748 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:25:16,767 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:25:16,770 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:25:16,772 | INFO | Certificate check completed
+2026-07-20 14:25:54,960 | INFO | Starting certificate check
+2026-07-20 14:25:54,978 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:25:55,289 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:25:55,291 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:25:55,293 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:25:55,317 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:25:55,319 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:25:55,321 | INFO | Certificate check completed
+2026-07-20 14:30:03,224 | INFO | Starting certificate check
+2026-07-20 14:30:03,243 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:30:03,540 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:30:03,542 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:30:03,544 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:30:03,566 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:30:03,567 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:30:03,570 | INFO | Certificate check completed
+2026-07-20 14:32:35,330 | INFO | Starting certificate check
+2026-07-20 14:32:35,349 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:32:35,693 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:32:35,695 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:32:35,698 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:32:35,724 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:32:35,727 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:32:35,730 | INFO | Certificate check completed
+2026-07-20 14:34:53,969 | INFO | Starting certificate check
+2026-07-20 14:34:53,989 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:34:54,293 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:34:54,296 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:34:54,298 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:34:54,321 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:34:54,322 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:34:54,324 | INFO | Certificate check completed
+2026-07-20 14:36:12,733 | INFO | Starting certificate check
+2026-07-20 14:36:12,752 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:36:12,981 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:36:12,983 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:36:12,985 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:36:12,999 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:36:13,001 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:36:13,002 | INFO | Certificate check completed
+2026-07-20 14:37:01,746 | INFO | Starting certificate check
+2026-07-20 14:37:01,759 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:37:01,920 | INFO | [dms-dev] Remaining Days: 41
+2026-07-20 14:37:01,921 | INFO | [dms-dev] Status: VALID
+2026-07-20 14:37:01,922 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:37:01,936 | INFO | [dms-prod] Remaining Days: 78
+2026-07-20 14:37:01,937 | INFO | [dms-prod] Status: VALID
+2026-07-20 14:37:01,938 | INFO | Certificate check completed

@@ -4,12 +4,12 @@ from models.certificate import CertificateInfo
 from utils.helper import colorize_status
 
 
-STATUS_FIELDS = [
- (CertificateStatus.VALID, "valid"),
- (CertificateStatus.WARNING, "warning"),
- (CertificateStatus.CRITICAL, "critical"),
- (CertificateStatus.EXPIRED, "expired"),
-]
+STATUS_MAPPING = {
+ CertificateStatus.VALID: "valid",
+ CertificateStatus.WARNING: "warning",
+ CertificateStatus.CRITICAL: "critical",
+ CertificateStatus.EXPIRED: "expired",
+}
 
 
 
@@ -20,15 +20,15 @@ def update_summary(summary: Summary, info: CertificateInfo, ) -> None:
 
     summary.total +=1
 
-    if info.status == CertificateStatus.VALID:
-       summary.valid += 1
-    elif info.status == CertificateStatus.WARNING:
-       summary.warning += 1
-    elif info.status == CertificateStatus.CRITICAL:
-       summary.critical += 1
-    elif info.status == CertificateStatus.EXPIRED:
-       summary.expired += 1
-
+    field = STATUS_MAPPING.get(info.status)
+    
+    if field:
+       setattr(
+         summary,
+         field,
+         getattr(summary, field) + 1
+       )
+    
 
 def update_error(summary: Summary, ) -> None:
     """
@@ -38,7 +38,7 @@ def update_error(summary: Summary, ) -> None:
     summary.error += 1
 
 
-def print_summary(summary: Summary, ) -> None:
+"""def print_summary(summary: Summary, ) -> None:
 
     print()
     
@@ -48,15 +48,12 @@ def print_summary(summary: Summary, ) -> None:
 
     print("=" * 60 )
 
-    print( f"Total          : {summary.total}")
+    print( f"Total{'':<11}: {summary.total}")
     print()
-
-    for status, field in STATUS_FIELDS:
+    for status, field in STATUS_MAPPING.items():
         print(
-           f"{colorize_status(status):<25}:"
-           f"{getattr(summary, field)}"
+           f"{colorize_status(status):<25}: {getattr(summary, field)}"
         )
-   
-    print(f"ERROR{'':<11}:{summary.error}")
-
+    print(f"ERROR{'':<11}: {summary.error}")
     print("=" * 60)
+"""
