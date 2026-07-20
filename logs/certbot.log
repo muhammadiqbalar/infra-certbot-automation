@@ -939,3 +939,124 @@
 2026-07-20 14:37:01,936 | INFO | [dms-prod] Remaining Days: 78
 2026-07-20 14:37:01,937 | INFO | [dms-prod] Status: VALID
 2026-07-20 14:37:01,938 | INFO | Certificate check completed
+2026-07-20 14:46:25,162 | INFO | Starting certificate check
+2026-07-20 14:46:25,182 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:46:25,525 | INFO | [dms-dev]VALID(41 days remaining)
+2026-07-20 14:46:25,527 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:46:25,553 | INFO | [dms-prod]VALID(78 days remaining)
+2026-07-20 14:46:25,555 | INFO | Certificate check completed
+2026-07-20 14:48:21,291 | INFO | Starting certificate check
+2026-07-20 14:48:21,308 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:48:21,653 | INFO | [dms-dev]VALID(41 days remaining)
+2026-07-20 14:48:21,655 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:48:21,685 | INFO | [dms-prod]VALID(77 days remaining)
+2026-07-20 14:48:21,688 | INFO | Certificate check completed
+2026-07-20 14:49:04,385 | INFO | Starting certificate check
+2026-07-20 14:49:04,403 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:49:04,686 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 14:49:04,687 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:49:04,698 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 14:49:04,700 | INFO | Certificate check completed
+2026-07-20 14:51:51,517 | INFO | Starting certificate check
+2026-07-20 14:51:51,539 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:51:51,868 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 14:51:51,872 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:51:51,911 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 14:51:51,915 | INFO | [{cert['name']}] Certificate check completed
+2026-07-20 14:52:25,779 | INFO | Starting certificate check
+2026-07-20 14:52:25,797 | INFO | [dms-dev] Checking certificate
+2026-07-20 14:52:26,146 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 14:52:26,149 | INFO | [dms-prod] Checking certificate
+2026-07-20 14:52:26,173 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 14:52:26,176 | INFO | [dms-prod] Certificate check completed
+2026-07-20 15:08:01,437 | INFO | Starting certificate check
+2026-07-20 15:08:01,455 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:08:01,731 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:08:01,733 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:08:01,752 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:08:01,753 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:08:01,755 | INFO | Certificate check completed
+2026-07-20 15:17:01,427 | INFO | Starting certificate check
+2026-07-20 15:17:01,449 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:17:01,749 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:17:01,751 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:17:01,773 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:17:01,775 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:17:01,776 | INFO | Certificate check completed successfully in {elapsed_time:.2f}s
+2026-07-20 15:17:29,287 | INFO | Starting certificate check
+2026-07-20 15:17:29,308 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:17:29,603 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:17:29,606 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:17:29,630 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:17:29,632 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:17:29,634 | INFO | Certificate check completed successfully in 0.00s
+2026-07-20 15:17:55,184 | INFO | Starting certificate check
+2026-07-20 15:17:55,204 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:17:55,473 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:17:55,476 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:17:55,496 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:17:55,498 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:17:55,500 | INFO | Certificate check completed successfully in 0.00s
+2026-07-20 15:19:01,073 | INFO | Starting certificate check
+2026-07-20 15:19:01,095 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:19:01,375 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:19:01,377 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:19:01,401 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:19:01,402 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:19:01,404 | INFO | Certificate check completed successfully in 0.000000s
+2026-07-20 15:19:38,436 | INFO | Starting certificate check
+2026-07-20 15:19:38,453 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:19:38,751 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:19:38,754 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:19:38,778 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:19:38,780 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:19:38,782 | INFO | Certificate check completed successfully in 3.329769242554903e-07s
+2026-07-20 15:20:20,047 | INFO | Starting certificate check
+2026-07-20 15:20:20,063 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:20:20,317 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:20:20,320 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:20:20,355 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:20:20,357 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:20:20,358 | INFO | Certificate check completed successfully in 0.0s
+2026-07-20 15:22:45,467 | INFO | Starting certificate check
+2026-07-20 15:22:45,486 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:22:45,770 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:22:45,772 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:22:45,795 | INFO | [dms-prod] VALID (77 days remaining)
+2026-07-20 15:22:45,797 | INFO | [Summary] Total=2, Valid=2, Warning=0, Critical=0, Expired=0, Error=0,
+2026-07-20 15:22:45,799 | INFO | Certificate check completed successfully in 0.330s
+2026-07-20 15:52:02,148 | INFO | Starting certificate check
+2026-07-20 15:52:02,169 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:52:02,439 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:52:02,441 | INFO | [dms-prod] Checking certificate
+2026-07-20 15:52:02,468 | INFO | [dms-prod] EXPIRED (-323 days remaining)
+2026-07-20 15:52:02,472 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-20 15:52:02,475 | INFO | Certificate check completed successfully in 0.324s
+2026-07-20 15:52:37,845 | INFO | Starting certificate check
+2026-07-20 15:52:37,865 | INFO | [dms-dev] Checking certificate
+2026-07-20 15:52:38,138 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 15:52:38,139 | INFO | [wms-prod] Checking certificate
+2026-07-20 15:52:38,163 | INFO | [wms-prod] EXPIRED (-323 days remaining)
+2026-07-20 15:52:38,166 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-20 15:52:38,168 | INFO | Certificate check completed successfully in 0.321s
+2026-07-20 16:05:24,399 | INFO | Starting certificate check
+2026-07-20 16:05:24,417 | INFO | [dms-dev] Checking certificate
+2026-07-20 16:05:24,810 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 16:05:24,812 | INFO | [wms-prod] Checking certificate
+2026-07-20 16:05:24,837 | INFO | [wms-prod] EXPIRED (-323 days remaining)
+2026-07-20 16:05:24,840 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-20 16:05:24,842 | INFO | Certificate check completed successfully in 0.441s
+2026-07-20 16:43:50,392 | INFO | Starting certificate check
+2026-07-20 16:43:50,404 | INFO | [dms-dev] Checking certificate
+2026-07-20 16:43:50,408 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/fullchain.pem
+2026-07-20 16:43:50,409 | INFO | [wms-prod] Checking certificate
+2026-07-20 16:43:50,812 | INFO | [wms-prod] EXPIRED (-323 days remaining)
+2026-07-20 16:43:50,817 | INFO | [Summary] Total=1, Valid=0, Warning=0, Critical=0, Expired=1, Error=1,
+2026-07-20 16:43:50,821 | INFO | Certificate check completed successfully in 0.424s
+2026-07-20 16:44:24,862 | INFO | Starting certificate check
+2026-07-20 16:44:24,886 | INFO | [dms-dev] Checking certificate
+2026-07-20 16:44:25,224 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-20 16:44:25,226 | INFO | [wms-prod] Checking certificate
+2026-07-20 16:44:25,250 | INFO | [wms-prod] EXPIRED (-323 days remaining)
+2026-07-20 16:44:25,252 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-20 16:44:25,254 | INFO | Certificate check completed successfully in 0.391s

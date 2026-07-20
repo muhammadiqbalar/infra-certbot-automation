@@ -17,7 +17,7 @@ from report.summary import (
     update_error,
     
 )
-
+import time
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,6 +30,8 @@ def run_check() -> None:
     """
     Check all certificate define in config YAML.
     """
+    start_time = time.perf_counter()
+
     logger.info("Starting certificate check")
 
     config = load_yaml(CONFIG_FILE)
@@ -50,9 +52,13 @@ def run_check() -> None:
 
             print_certificate(info)
 
-            logger.info(f"[{cert['name']}] Remaining Days: {info.remaining_days}")
+            logger.info(
+              f"[{cert['name']}] "
+              f"{info.status.value} "
+              f"({info.remaining_days} days remaining)"
+            )
             
-            logger.info(f"[{cert['name']}] Status: {info.status.value}")
+            """logger.info(f"[{cert['name']}] Status: {info.status.value}")"""
 
         except Exception as err:
             update_error(summary)
@@ -62,7 +68,19 @@ def run_check() -> None:
 
     print_summary(summary)
 
-    logger.info("Certificate check completed")
+    elapsed_time = time.perf_counter() - start_time
+
+    logger.info(
+     "[Summary] "
+     f"Total={summary.total}, "
+     f"Valid={summary.valid}, "
+     f"Warning={summary.warning}, "
+     f"Critical={summary.critical}, "
+     f"Expired={summary.expired}, "
+     f"Error={summary.error},"
+    )
+
+    logger.info(f"Certificate check completed successfully in {elapsed_time:.3f}s")
 
 def main() -> None:
     """

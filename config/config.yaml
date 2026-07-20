@@ -1,6 +1,15 @@
+certificate:
+  warning_days: 45
+  critical_days: 15
+
+backup:
+  enabled: true
+  directory: backups
+
+
 certificates:
   - name: dms-dev
-    path: certs/fullchain.pem
+    path: certs/dev/fullchain.pem
 
-  - name: dms-prod
+  - name: wms-prod
     path: certs/prod/fullchain.pem
