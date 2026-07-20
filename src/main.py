@@ -9,6 +9,13 @@ from utils.output import (
     print_header,
 )
 
+from models.summary import Summary
+from report.summary import (
+    update_summary,
+    update_error,
+    print_summary,
+)
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,6 +32,7 @@ def run_check() -> None:
 
     config = load_yaml(CONFIG_FILE)
     
+    summary = Summary ()
 
     for cert in config["certificates"]:
         print_header(cert["name"])
@@ -36,15 +44,21 @@ def run_check() -> None:
 
             info = check_certificate(cert_path)
 
+            update_summary(summary, info)
+
             print_certificate(info)
 
             logger.info(f"[{cert['name']}] Remaining Days: {info.remaining_days}")
             
             logger.info(f"[{cert['name']}] Status: {info.status.value}")
+
         except Exception as err:
+            update_error(summary)
             logger.error(err)
             print_error(err)
-        
+        print()
+
+    print_summary(summary)
 
     logger.info("Certificate check completed")
 

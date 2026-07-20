@@ -1,5 +1,5 @@
 from models.certificate import CertificateInfo
-from utils.helper import colorize_status
+from utils.helper import colorize_status, format_datetime
 
 def print_header(name: str) -> None:
     """
@@ -30,8 +30,8 @@ def print_certificate(info: CertificateInfo) -> None:
     print(f"Public key algorithm : {info.public_key_algorithm}")
     print(f"Key Size             : {info.key_size} bits")
     
-    print(f"Valid From           : {info.valid_from}")
-    print(f"Valid Until          : {info.valid_until}")
+    print(f"Valid From           : "f"{format_datetime(info.valid_from)}")
+    print(f"Valid Until          : "f"{format_datetime(info.valid_until)}")
     print(f"Remaining Days       : {info.remaining_days}")
     print(f"Status               : {colorize_status(info.status)}")
     
