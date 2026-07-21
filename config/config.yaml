@@ -5,11 +5,14 @@ certificate:
 backup:
   enabled: true
   directory: backups
+  retention: 7
 
 
 certificates:
   - name: dms-dev
-    path: certs/dev/fullchain.pem
+    path: certs/dev/dms-dev.mpi-apps.co.id
+    source_path: certs/dev/dms-dev.mpi-apps.co.id/fullchain.pem
 
   - name: wms-prod
-    path: certs/prod/fullchain.pem
+    path: certs/prod/wms.mpi-apps.co.id
+    source_path: certs/prod/wms.mpi-apps.co.id/fullchain.pem

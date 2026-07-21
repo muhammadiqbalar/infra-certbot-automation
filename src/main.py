@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 from certbot.check import check_certificate
+from backup.backup import run_backup
 from utils.yaml_loader import load_yaml
 from utils.logger import setup_logger
 from utils.output import (
@@ -42,7 +43,7 @@ def run_check() -> None:
         print_header(cert["name"])
 
         try:
-            cert_path = BASE_DIR / cert["path"]
+            cert_path = BASE_DIR / cert["source_path"]
 
             logger.info(f"[{cert['name']}] Checking certificate")
 
@@ -97,11 +98,18 @@ def main() -> None:
          "check",
          help="Check certificate information"
     )
+    
+    backup_parser = subparser.add_parser(
+        "backup",
+        help="Backup certificate"
+    )
 
     args = parser.parse_args()
 
     if args.command == "check":
        run_check()
+    if args.command == "backup":
+       run_backup()
 
 if __name__ == "__main__":
    main()

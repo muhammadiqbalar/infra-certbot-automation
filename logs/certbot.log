@@ -1060,3 +1060,128 @@
 2026-07-20 16:44:25,250 | INFO | [wms-prod] EXPIRED (-323 days remaining)
 2026-07-20 16:44:25,252 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
 2026-07-20 16:44:25,254 | INFO | Certificate check completed successfully in 0.391s
+2026-07-21 09:48:16,516 | INFO | Starting certificate check
+2026-07-21 09:48:16,523 | INFO | [wms-dev] Checking certificate
+2026-07-21 09:48:16,525 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev
+2026-07-21 09:48:16,525 | INFO | [wms-prod] Checking certificate
+2026-07-21 09:48:16,527 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/prod
+2026-07-21 09:48:16,527 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 09:48:16,528 | INFO | Certificate check completed successfully in 0.012s
+2026-07-21 10:11:09,491 | INFO | Starting certificate check
+2026-07-21 10:11:09,510 | INFO | [wms-dev] Checking certificate
+2026-07-21 10:11:09,512 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev
+2026-07-21 10:11:09,513 | INFO | [wms-prod] Checking certificate
+2026-07-21 10:11:09,515 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/prod
+2026-07-21 10:11:09,516 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 10:11:09,517 | INFO | Certificate check completed successfully in 0.025s
+2026-07-21 10:46:27,012 | INFO | Starting certificate backup
+2026-07-21 10:50:43,577 | INFO | Starting certificate backup
+2026-07-21 10:53:16,281 | INFO | Starting certificate check
+2026-07-21 10:53:16,287 | INFO | [wms-dev] Checking certificate
+2026-07-21 10:53:16,289 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev
+2026-07-21 10:53:16,289 | INFO | [wms-prod] Checking certificate
+2026-07-21 10:53:16,290 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/prod
+2026-07-21 10:53:16,291 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 10:53:16,292 | INFO | Certificate check completed successfully in 0.010s
+2026-07-21 10:57:59,351 | INFO | Starting certificate check
+2026-07-21 10:57:59,358 | INFO | [wms-dev] Checking certificate
+2026-07-21 10:57:59,360 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev
+2026-07-21 10:57:59,361 | INFO | [wms-prod] Checking certificate
+2026-07-21 10:57:59,362 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/prod
+2026-07-21 10:57:59,362 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 10:57:59,363 | INFO | Certificate check completed successfully in 0.011s
+2026-07-21 10:59:13,579 | INFO | Starting certificate check
+2026-07-21 10:59:13,607 | ERROR | 'directory'
+2026-07-21 10:59:13,616 | ERROR | 'directory'
+2026-07-21 10:59:13,617 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 10:59:13,618 | INFO | Certificate check completed successfully in 0.038s
+2026-07-21 11:01:07,622 | INFO | Starting certificate check
+2026-07-21 11:01:07,627 | ERROR | 'directory'
+2026-07-21 11:01:07,628 | ERROR | 'directory'
+2026-07-21 11:01:07,628 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 11:01:07,629 | INFO | Certificate check completed successfully in 0.006s
+2026-07-21 11:01:35,268 | INFO | Starting certificate check
+2026-07-21 11:01:35,283 | INFO | [wms-dev] Checking certificate
+2026-07-21 11:01:35,286 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev
+2026-07-21 11:01:35,287 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:01:35,288 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/prod
+2026-07-21 11:01:35,289 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 11:01:35,290 | INFO | Certificate check completed successfully in 0.022s
+2026-07-21 11:03:02,728 | INFO | Starting certificate check
+2026-07-21 11:03:02,733 | INFO | [wms-dev] Checking certificate
+2026-07-21 11:03:02,736 | ERROR | [Errno 21] Is a directory: '/mnt/d/Iqbal/infra-certbot-automation/certs/dev'
+2026-07-21 11:03:02,737 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:03:02,739 | ERROR | [Errno 21] Is a directory: '/mnt/d/Iqbal/infra-certbot-automation/certs/prod'
+2026-07-21 11:03:02,740 | INFO | [Summary] Total=0, Valid=0, Warning=0, Critical=0, Expired=0, Error=2,
+2026-07-21 11:03:02,741 | INFO | Certificate check completed successfully in 0.012s
+2026-07-21 11:03:57,180 | INFO | Starting certificate backup
+2026-07-21 11:03:57,181 | INFO | [wms-dev] Checking source
+2026-07-21 11:03:57,186 | INFO | [wms-dev] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:03:57,187 | INFO | [wms-prod] Checking source
+2026-07-21 11:03:57,191 | INFO | [wms-prod] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:03:57,192 | INFO | Certificate backup Completed
+2026-07-21 11:07:06,847 | INFO | Starting certificate backup
+2026-07-21 11:07:06,848 | INFO | [wms-dev] Checking source
+2026-07-21 11:07:06,854 | INFO | [wms-dev] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:07:06,855 | INFO | [wms-prod] Checking source
+2026-07-21 11:07:06,861 | INFO | [wms-prod] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:07:06,863 | INFO | Certificate backup Completed
+2026-07-21 11:10:00,940 | INFO | Starting certificate backup
+2026-07-21 11:10:00,941 | INFO | [wms-dev] Checking source
+2026-07-21 11:10:00,947 | INFO | [wms-dev] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:10:00,949 | INFO | [wms-prod] Checking source
+2026-07-21 11:10:00,953 | INFO | [wms-prod] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:10:00,954 | INFO | Certificate backup Completed
+2026-07-21 11:10:10,885 | INFO | Starting certificate check
+2026-07-21 11:10:10,890 | INFO | [wms-dev] Checking certificate
+2026-07-21 11:10:10,967 | INFO | [wms-dev] VALID (41 days remaining)
+2026-07-21 11:10:10,968 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:10:10,970 | ERROR | Certificate file not found: /mnt/d/Iqbal/infra-certbot-automation/certs/dev/wms.mpi-apps.co.id/fullchain.pem
+2026-07-21 11:10:10,970 | INFO | [Summary] Total=1, Valid=1, Warning=0, Critical=0, Expired=0, Error=1,
+2026-07-21 11:10:10,971 | INFO | Certificate check completed successfully in 0.086s
+2026-07-21 11:10:41,480 | INFO | Starting certificate check
+2026-07-21 11:10:41,488 | INFO | [wms-dev] Checking certificate
+2026-07-21 11:10:41,568 | INFO | [wms-dev] VALID (41 days remaining)
+2026-07-21 11:10:41,569 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:10:41,576 | INFO | [wms-prod] EXPIRED (-324 days remaining)
+2026-07-21 11:10:41,577 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-21 11:10:41,577 | INFO | Certificate check completed successfully in 0.097s
+2026-07-21 11:13:19,347 | INFO | Starting certificate check
+2026-07-21 11:13:19,352 | INFO | [dms-dev] Checking certificate
+2026-07-21 11:13:19,414 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-21 11:13:19,416 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:13:19,421 | INFO | [wms-prod] EXPIRED (-324 days remaining)
+2026-07-21 11:13:19,422 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-21 11:13:19,423 | INFO | Certificate check completed successfully in 0.075s
+2026-07-21 11:13:37,098 | INFO | Starting certificate backup
+2026-07-21 11:13:37,099 | INFO | [dms-dev] Checking source
+2026-07-21 11:13:37,106 | INFO | [dms-dev] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:13:37,107 | INFO | [wms-prod] Checking source
+2026-07-21 11:13:37,112 | INFO | [wms-prod] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:13:37,113 | INFO | Certificate backup Completed
+2026-07-21 11:15:54,971 | INFO | Starting certificate check
+2026-07-21 11:15:54,976 | INFO | [dms-dev] Checking certificate
+2026-07-21 11:15:55,065 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-21 11:15:55,067 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:15:55,075 | INFO | [wms-prod] EXPIRED (-324 days remaining)
+2026-07-21 11:15:55,076 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-21 11:15:55,076 | INFO | Certificate check completed successfully in 0.105s
+2026-07-21 11:16:01,616 | INFO | Starting certificate backup
+2026-07-21 11:16:01,617 | INFO | [dms-dev] Checking source
+2026-07-21 11:16:01,622 | INFO | [dms-dev] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:16:01,623 | INFO | [wms-prod] Checking source
+2026-07-21 11:16:01,627 | INFO | [wms-prod] Missing files : cert.pem, chain.pem, fullchain.pem, privkey.pem
+2026-07-21 11:16:01,628 | INFO | Certificate backup Completed
+2026-07-21 11:18:43,248 | INFO | Starting certificate check
+2026-07-21 11:18:43,253 | INFO | [dms-dev] Checking certificate
+2026-07-21 11:18:43,309 | INFO | [dms-dev] VALID (41 days remaining)
+2026-07-21 11:18:43,310 | INFO | [wms-prod] Checking certificate
+2026-07-21 11:18:43,316 | INFO | [wms-prod] EXPIRED (-324 days remaining)
+2026-07-21 11:18:43,316 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-21 11:18:43,317 | INFO | Certificate check completed successfully in 0.068s
+2026-07-21 11:18:47,411 | INFO | Starting certificate backup
+2026-07-21 11:18:47,412 | INFO | [dms-dev] Checking source
+2026-07-21 11:18:47,524 | INFO | [dms-dev] Backup completed
+2026-07-21 11:18:47,525 | INFO | [wms-prod] Checking source
+2026-07-21 11:18:47,636 | INFO | [wms-prod] Backup completed
+2026-07-21 11:18:47,637 | INFO | Certificate backup Completed

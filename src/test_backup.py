@@ -15,6 +15,7 @@ domains =  [
 
 for source in domains:
    print(f"Backup {source}")
+
    backup_certificate(
      source, 
      backup_dir,
