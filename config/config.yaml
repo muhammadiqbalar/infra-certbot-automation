@@ -5,7 +5,7 @@ certificate:
 backup:
   enabled: true
   directory: backups
-  retention: 7
+  retention: 3
 
 
 certificates:

@@ -1,0 +1,18 @@
+{
+    "backup_id": "20260721_162715",
+    "created_at": "2026-07-21T16:27:16+07:00",
+    "hostname": "LP15344",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "certificates": [
+        {
+            "name": "dms-dev",
+            "status": "SUCCESS"
+        },
+        {
+            "name": "wms-prod",
+            "status": "SUCCESS"
+        }
+    ]
+}

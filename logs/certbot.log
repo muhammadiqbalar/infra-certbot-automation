@@ -1237,3 +1237,141 @@
 2026-07-21 14:09:14,239 | INFO | [wms-prod] Checking source
 2026-07-21 14:09:14,771 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_140913/wms-prod
 2026-07-21 14:09:14,787 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 14:56:30,744 | INFO | Starting certificate backup
+2026-07-21 14:59:43,371 | INFO | Starting certificate backup
+2026-07-21 14:59:43,372 | INFO | [dms-dev] Checking source
+2026-07-21 14:59:43,859 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_145943/dms-dev
+2026-07-21 14:59:43,861 | ERROR | [dms-dev] BackupResult.__init__() missing 2 required positional arguments: 'files' and 'duration'
+2026-07-21 15:00:36,619 | INFO | Starting certificate backup
+2026-07-21 15:00:36,621 | INFO | [dms-dev] Checking source
+2026-07-21 15:00:37,212 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_150036/dms-dev
+2026-07-21 15:00:37,214 | INFO | [wms-prod] Checking source
+2026-07-21 15:00:37,855 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_150036/wms-prod
+2026-07-21 15:01:09,492 | INFO | Starting certificate backup
+2026-07-21 15:01:09,494 | INFO | [dms-dev] Checking source
+2026-07-21 15:01:09,869 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_150109/dms-dev
+2026-07-21 15:01:09,871 | INFO | [wms-prod] Checking source
+2026-07-21 15:01:10,484 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_150109/wms-prod
+2026-07-21 15:01:10,505 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:04:51,624 | INFO | Starting certificate backup
+2026-07-21 15:04:51,626 | INFO | [dms-dev] Checking source
+2026-07-21 15:04:52,287 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_150451/dms-dev
+2026-07-21 15:04:52,289 | INFO | [wms-prod] Checking source
+2026-07-21 15:04:52,867 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_150451/wms-prod
+2026-07-21 15:05:25,921 | INFO | Starting certificate backup
+2026-07-21 15:05:25,924 | INFO | [dms-dev] Checking source
+2026-07-21 15:05:26,483 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_150525/dms-dev
+2026-07-21 15:05:26,485 | INFO | [wms-prod] Checking source
+2026-07-21 15:05:27,094 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_150525/wms-prod
+2026-07-21 15:05:27,112 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:07:34,149 | INFO | Starting certificate backup
+2026-07-21 15:07:34,150 | INFO | [dms-dev] Checking source
+2026-07-21 15:07:34,473 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_150734/dms-dev
+2026-07-21 15:07:34,475 | INFO | [wms-prod] Checking source
+2026-07-21 15:07:34,072 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_150734/wms-prod
+2026-07-21 15:07:34,084 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:23:03,731 | INFO | Starting certificate backup
+2026-07-21 15:23:03,733 | INFO | [dms-dev] Checking source
+2026-07-21 15:23:04,038 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_152303/dms-dev
+2026-07-21 15:23:04,039 | INFO | [wms-prod] Checking source
+2026-07-21 15:23:04,511 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_152303/wms-prod
+2026-07-21 15:23:40,888 | INFO | Starting certificate backup
+2026-07-21 15:23:40,892 | INFO | [dms-dev] Checking source
+2026-07-21 15:23:41,782 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_152340/dms-dev
+2026-07-21 15:23:41,784 | INFO | [wms-prod] Checking source
+2026-07-21 15:23:42,475 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_152340/wms-prod
+2026-07-21 15:25:10,082 | INFO | Starting certificate backup
+2026-07-21 15:25:10,083 | INFO | [dms-dev] Checking source
+2026-07-21 15:25:10,563 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_152510/dms-dev
+2026-07-21 15:25:10,565 | INFO | [wms-prod] Checking source
+2026-07-21 15:25:11,162 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_152510/wms-prod
+2026-07-21 15:27:42,839 | INFO | Starting certificate backup
+2026-07-21 15:27:42,842 | INFO | [dms-dev] Checking source
+2026-07-21 15:27:43,428 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_152742/dms-dev
+2026-07-21 15:27:43,431 | INFO | [wms-prod] Checking source
+2026-07-21 15:27:44,055 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_152742/wms-prod
+2026-07-21 15:29:40,646 | INFO | Starting certificate backup
+2026-07-21 15:29:40,648 | INFO | [dms-dev] Checking source
+2026-07-21 15:29:41,229 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_152940/dms-dev
+2026-07-21 15:29:41,231 | INFO | [wms-prod] Checking source
+2026-07-21 15:29:41,813 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_152940/wms-prod
+2026-07-21 15:34:16,022 | INFO | Starting certificate backup
+2026-07-21 15:34:16,025 | INFO | [dms-dev] Checking source
+2026-07-21 15:34:16,648 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_153415/dms-dev
+2026-07-21 15:34:16,650 | INFO | [wms-prod] Checking source
+2026-07-21 15:34:17,138 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_153415/wms-prod
+2026-07-21 15:34:17,249 | INFO | Deleted old backup -> 20260721_152510
+2026-07-21 15:34:17,250 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:34:31,382 | INFO | Starting certificate backup
+2026-07-21 15:34:31,385 | INFO | [dms-dev] Checking source
+2026-07-21 15:34:32,078 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_153431/dms-dev
+2026-07-21 15:34:32,081 | INFO | [wms-prod] Checking source
+2026-07-21 15:34:32,654 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_153431/wms-prod
+2026-07-21 15:34:32,809 | INFO | Deleted old backup -> 20260721_152742
+2026-07-21 15:34:32,811 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:34:49,701 | INFO | Starting certificate backup
+2026-07-21 15:34:49,704 | INFO | [dms-dev] Checking source
+2026-07-21 15:34:50,344 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_153449/dms-dev
+2026-07-21 15:34:50,347 | INFO | [wms-prod] Checking source
+2026-07-21 15:34:50,937 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_153449/wms-prod
+2026-07-21 15:34:51,071 | INFO | Deleted old backup -> 20260721_152940
+2026-07-21 15:34:51,074 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 15:35:13,515 | INFO | Starting certificate backup
+2026-07-21 15:35:13,517 | INFO | [dms-dev] Checking source
+2026-07-21 15:35:14,155 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_153513/dms-dev
+2026-07-21 15:35:14,157 | INFO | [wms-prod] Checking source
+2026-07-21 15:35:14,748 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_153513/wms-prod
+2026-07-21 15:35:14,883 | INFO | Deleted old backup -> 20260721_153415
+2026-07-21 15:35:14,885 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 16:20:14,162 | INFO | Starting certificate backup
+2026-07-21 16:20:14,164 | INFO | [dms-dev] Checking source
+2026-07-21 16:20:14,743 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162014/dms-dev
+2026-07-21 16:20:14,746 | INFO | [wms-prod] Checking source
+2026-07-21 16:20:15,437 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162014/wms-prod
+2026-07-21 16:20:59,038 | INFO | Starting certificate backup
+2026-07-21 16:20:59,040 | INFO | [dms-dev] Checking source
+2026-07-21 16:20:59,679 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162059/dms-dev
+2026-07-21 16:20:59,682 | INFO | [wms-prod] Checking source
+2026-07-21 16:21:00,244 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162059/wms-prod
+2026-07-21 16:21:33,829 | INFO | Starting certificate backup
+2026-07-21 16:21:33,831 | INFO | [dms-dev] Checking source
+2026-07-21 16:21:34,418 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162133/dms-dev
+2026-07-21 16:21:34,420 | INFO | [wms-prod] Checking source
+2026-07-21 16:21:34,904 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162133/wms-prod
+2026-07-21 16:21:35,060 | INFO | Deleted old backup -> 20260721_153431
+2026-07-21 16:21:35,152 | INFO | Deleted old backup -> 20260721_153449
+2026-07-21 16:21:35,247 | INFO | Deleted old backup -> 20260721_153513
+2026-07-21 16:21:35,249 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 16:24:04,957 | INFO | Starting certificate backup
+2026-07-21 16:24:04,959 | INFO | [dms-dev] Checking source
+2026-07-21 16:24:05,384 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162404/dms-dev
+2026-07-21 16:24:05,385 | INFO | [wms-prod] Checking source
+2026-07-21 16:24:05,732 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162404/wms-prod
+2026-07-21 16:25:08,583 | INFO | Starting certificate backup
+2026-07-21 16:25:08,586 | INFO | [dms-dev] Checking source
+2026-07-21 16:25:09,225 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162508/dms-dev
+2026-07-21 16:25:09,228 | INFO | [wms-prod] Checking source
+2026-07-21 16:25:09,816 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162508/wms-prod
+2026-07-21 16:27:15,302 | INFO | Starting certificate backup
+2026-07-21 16:27:15,304 | INFO | [dms-dev] Checking source
+2026-07-21 16:27:15,907 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_162715/dms-dev
+2026-07-21 16:27:15,909 | INFO | [wms-prod] Checking source
+2026-07-21 16:27:16,598 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_162715/wms-prod
+2026-07-21 16:27:16,800 | INFO | Deleted old backup -> backups/20260721_162133
+2026-07-21 16:27:16,802 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 16:40:36,306 | INFO | Starting certificate backup
+2026-07-21 16:40:36,308 | INFO | [dms-dev] Checking source
+2026-07-21 16:40:36,883 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_164036/dms-dev
+2026-07-21 16:40:36,889 | INFO | [wms-prod] Checking source
+2026-07-21 16:40:37,556 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_164036/wms-prod
+2026-07-21 16:40:37,724 | INFO | Deleted old backup -> backups/20260721_162404
+2026-07-21 16:40:37,728 | INFO | Retention policy completed (deleted=1, kept=3)
+2026-07-21 16:40:37,730 | INFO | Backup Completed successfully(2 success, 0 failed)
+2026-07-21 16:43:40,536 | INFO | Starting certificate backup
+2026-07-21 16:43:40,538 | INFO | [dms-dev] Checking source
+2026-07-21 16:43:40,362 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_164340/dms-dev
+2026-07-21 16:43:40,365 | INFO | [wms-prod] Checking source
+2026-07-21 16:43:41,036 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_164340/wms-prod
+2026-07-21 16:43:41,092 | INFO | No old backup to delete(current=3, retention=3)
+2026-07-21 16:43:41,095 | INFO | Retention policy completed (deleted=0, kept=3)
+2026-07-21 16:43:41,096 | INFO | Backup Completed successfully(2 success, 0 failed)

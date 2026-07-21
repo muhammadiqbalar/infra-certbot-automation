@@ -7,6 +7,8 @@ from utils.yaml_loader import load_yaml
 from backup.helper import create_backup_directory
 from backup.verify import verify_certificate_directory
 from backup.metadata import write_backup_metadata
+from backup.retention import deleted_old_backups
+from models.backup import BackupResult
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 CONFIG_FILE = BASE_DIR / "config" / "config.yaml"
@@ -46,7 +48,7 @@ def run_backup() -> None:
 
     failed = 0
 
-    results = []
+    results: list[BackupResult] = []
 
     for cert in config ["certificates"]:
         
@@ -71,10 +73,10 @@ def run_backup() -> None:
            print(f"ERROR: Missing Files - {', '.join(missing)}")
            
            results.append(
-             {
-             "name": cert["name"],
-             "status": "FAILED"
-             }
+             BackupResult(
+               name= cert["name"],
+               status= "FAILED"
+             )
            )
          
            print()
@@ -96,10 +98,10 @@ def run_backup() -> None:
            print("Backup Successfully")
            
            results.append(
-             {
-                "name": cert["name"],
-                "status": "SUCCESS"
-             }
+             BackupResult(
+               name=cert["name"],
+               status="SUCCESS"
+             )
 
            )
   
@@ -111,10 +113,10 @@ def run_backup() -> None:
            logger.error(f"[{cert['name']}] {err}")
            print(f"ERROR: {err}")
            results.append(
-             {
-               "name": cert["name"],
-               "status": "FAILED"
-             }
+             BackupResult(
+               name=cert["name"],
+               status="FAILED"
+             )
            )
            print()
            failed +=1
@@ -137,6 +139,14 @@ def run_backup() -> None:
       Certificates=results,
       success=success,
       failed=failed,
+    )
+    deleted, kept = deleted_old_backups(
+      backup_root=backup_root,
+      retention=config["backup"]["retention"],
+    )
+    logger.info(
+      f"Retention policy completed "
+      f"(deleted={deleted}, kept={kept})"
     )
 
     logger.info(
