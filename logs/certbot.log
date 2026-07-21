@@ -1185,3 +1185,55 @@
 2026-07-21 11:18:47,525 | INFO | [wms-prod] Checking source
 2026-07-21 11:18:47,636 | INFO | [wms-prod] Backup completed
 2026-07-21 11:18:47,637 | INFO | Certificate backup Completed
+2026-07-21 11:28:34,176 | INFO | Starting certificate backup
+2026-07-21 11:28:34,177 | INFO | [dms-dev] Checking source
+2026-07-21 11:28:34,283 | INFO | [dms-dev] Backup completed -> /mnt/d/Iqbal/infra-certbot-automation/backups/20260721_112834
+2026-07-21 11:28:34,284 | INFO | [wms-prod] Checking source
+2026-07-21 11:28:34,395 | INFO | [wms-prod] Backup completed -> /mnt/d/Iqbal/infra-certbot-automation/backups/20260721_112834
+2026-07-21 11:28:34,397 | INFO | Certificate backup Completed
+2026-07-21 11:30:25,940 | INFO | Starting certificate backup
+2026-07-21 11:30:25,941 | INFO | [dms-dev] Checking source
+2026-07-21 11:30:26,154 | INFO | [dms-dev] Backup completed -> /mnt/d/Iqbal/infra-certbot-automation/backups/20260721_113025/dms-dev
+2026-07-21 11:30:26,155 | INFO | [wms-prod] Checking source
+2026-07-21 11:30:26,277 | INFO | [wms-prod] Backup completed -> /mnt/d/Iqbal/infra-certbot-automation/backups/20260721_113025/wms-prod
+2026-07-21 11:30:26,278 | INFO | Certificate backup Completed
+2026-07-21 11:32:30,320 | INFO | Starting certificate backup
+2026-07-21 11:32:30,321 | INFO | [dms-dev] Checking source
+2026-07-21 11:32:30,445 | INFO | [dms-dev] Backup completed -> backups/20260721_113230/dms-dev
+2026-07-21 11:32:30,446 | INFO | [wms-prod] Checking source
+2026-07-21 11:32:30,590 | INFO | [wms-prod] Backup completed -> backups/20260721_113230/wms-prod
+2026-07-21 11:32:30,591 | INFO | Certificate backup Completed
+2026-07-21 11:34:15,483 | INFO | Starting certificate backup
+2026-07-21 11:34:15,485 | INFO | [dms-dev] Checking source
+2026-07-21 11:34:15,626 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_113415/dms-dev
+2026-07-21 11:34:15,627 | INFO | [wms-prod] Checking source
+2026-07-21 11:34:15,738 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_113415/wms-prod
+2026-07-21 11:34:15,739 | INFO | Certificate backup Completed
+2026-07-21 13:30:10,979 | INFO | Starting certificate check
+2026-07-21 13:30:11,006 | INFO | [dms-dev] Checking certificate
+2026-07-21 13:30:11,353 | INFO | [dms-dev] VALID (40 days remaining)
+2026-07-21 13:30:11,355 | INFO | [wms-prod] Checking certificate
+2026-07-21 13:30:11,379 | INFO | [wms-prod] EXPIRED (-324 days remaining)
+2026-07-21 13:30:11,381 | INFO | [Summary] Total=2, Valid=1, Warning=0, Critical=0, Expired=1, Error=0,
+2026-07-21 13:30:11,384 | INFO | Certificate check completed successfully in 0.403s
+2026-07-21 14:01:11,821 | INFO | Starting certificate backup
+2026-07-21 14:01:11,823 | INFO | [dms-dev] Checking source
+2026-07-21 14:01:12,471 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_140111/dms-dev
+2026-07-21 14:01:12,473 | INFO | [wms-prod] Checking source
+2026-07-21 14:01:13,121 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_140111/wms-prod
+2026-07-21 14:04:45,767 | INFO | Starting certificate backup
+2026-07-21 14:04:45,772 | INFO | [dms-dev] Checking source
+2026-07-21 14:04:46,569 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_140445/dms-dev
+2026-07-21 14:04:46,571 | INFO | [wms-prod] Checking source
+2026-07-21 14:04:47,158 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_140445/wms-prod
+2026-07-21 14:08:06,916 | INFO | Starting certificate backup
+2026-07-21 14:08:06,918 | INFO | [dms-dev] Checking source
+2026-07-21 14:08:07,501 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_140806/dms-dev
+2026-07-21 14:08:07,502 | INFO | [wms-prod] Checking source
+2026-07-21 14:08:07,939 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_140806/wms-prod
+2026-07-21 14:09:13,628 | INFO | Starting certificate backup
+2026-07-21 14:09:13,630 | INFO | [dms-dev] Checking source
+2026-07-21 14:09:14,237 | INFO | [dms-dev] Backup completed (5) files -> backups/20260721_140913/dms-dev
+2026-07-21 14:09:14,239 | INFO | [wms-prod] Checking source
+2026-07-21 14:09:14,771 | INFO | [wms-prod] Backup completed (5) files -> backups/20260721_140913/wms-prod
+2026-07-21 14:09:14,787 | INFO | Backup Completed successfully(2 success, 0 failed)

@@ -6,7 +6,7 @@ from utils.yaml_loader import load_yaml
 
 from backup.helper import create_backup_directory
 from backup.verify import verify_certificate_directory
-
+from backup.metadata import write_backup_metadata
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 CONFIG_FILE = BASE_DIR / "config" / "config.yaml"
@@ -43,7 +43,10 @@ def run_backup() -> None:
     print()
 
     success = 0
+
     failed = 0
+
+    results = []
 
     for cert in config ["certificates"]:
         
@@ -63,21 +66,42 @@ def run_backup() -> None:
 
         if not valid:
 
-           logger.info(f"[{cert['name']}] Missing files : {', '.join(missing)}")
+           logger.error(f"[{cert['name']}] Missing files : {', '.join(missing)}")
 
            print(f"ERROR: Missing Files - {', '.join(missing)}")
+           
+           results.append(
+             {
+             "name": cert["name"],
+             "status": "FAILED"
+             }
+           )
          
            print()
   
            failed +=1
      
            continue
+
         try:
+
            backup_certificate(source, destination)
-        
-           logger.info(f"[{cert['name']}] Backup completed")
+
+           relative_path = destination.relative_to(BASE_DIR)
+
+           file_count = len(list(destination.glob("*")))
+
+           logger.info(f"[{cert['name']}] Backup completed ({file_count}) files -> {relative_path}")
 
            print("Backup Successfully")
+           
+           results.append(
+             {
+                "name": cert["name"],
+                "status": "SUCCESS"
+             }
+
+           )
   
            print()
        
@@ -86,9 +110,16 @@ def run_backup() -> None:
         except Exception as err:
            logger.error(f"[{cert['name']}] {err}")
            print(f"ERROR: {err}")
+           results.append(
+             {
+               "name": cert["name"],
+               "status": "FAILED"
+             }
+           )
            print()
            failed +=1
-
+        
+    
     print("=" * 60)
 
     print("Backup Summary")
@@ -99,8 +130,19 @@ def run_backup() -> None:
     print(f"Success  : {success}")
     print(f"Failed   : {failed}")
     print(f"Location : {backup_dir}")
+    
+    write_backup_metadata(
+    
+      backup_dir=backup_dir,
+      Certificates=results,
+      success=success,
+      failed=failed,
+    )
 
-    logger.info("Certificate backup Completed")
+    logger.info(
+      f"Backup Completed successfully"
+      f"({success} success, {failed} failed)"
+    )
          
  
 
