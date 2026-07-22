@@ -25,7 +25,14 @@ from config.constants import(
 )
 
 from models.status import CertificateStatus
+from utils.yaml_loader import load_yaml
+from utils.logger import setup_logger
 
+logger = setup_logger()
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+CONFIG_FILE = BASE_DIR / "config" / "config.yaml"
 
 def load_certificate(cert_path: Path) -> x509.Certificate:
     """
@@ -76,10 +83,10 @@ def determine_status(remaining_days: int) -> CertificateStatus:
     """
     if remaining_days <= 0:
         return CertificateStatus.EXPIRED
-    elif remaining_days <= WARNING_DAYS:
-        return CertificateStatus.WARNING
     elif remaining_days <= CRITICAL_DAYS:
         return CertificateStatus.CRITICAL
+    elif remaining_days <= WARNING_DAYS:
+        return CertificateStatus.WARNING
     else:
         return CertificateStatus.VALID
 
@@ -148,7 +155,74 @@ def check_certificate(cert_path: str | Path) -> CertificateInfo:
     return get_certificate_info(certificate)
 
 
+def run_check() -> None:
+    """
+    Check all configured certificates.
+    """
 
+    logger.info("Starting certificate check")
+
+    config = load_yaml(CONFIG_FILE)
+
+    print("=" * 60)
+    print("Certificate Check")
+    print("=" * 60)
+
+    total = 0
+    valid = 0
+    warning = 0
+    critical = 0
+    expired = 0
+    error = 0
+
+    for cert in config["certificates"]:
+
+        total += 1
+
+        try:
+
+            info = check_certificate(cert["source_path"])
+
+            logger.info(
+                f"[{cert['name']}] "
+                f"{info.status.value} "
+                f"({info.remaining_days} days remaining)"
+            )
+
+            print(f"\nCertificate : {cert['name']}")
+            print(f"Common Name : {info.common_name}")
+            print(f"Status      : {info.status.value}")
+            print(f"Remaining   : {info.remaining_days} days")
+
+            if info.status == CertificateStatus.VALID:
+                valid += 1
+
+            elif info.status == CertificateStatus.WARNING:
+                warning += 1
+
+            elif info.status == CertificateStatus.CRITICAL:
+                critical += 1
+
+            elif info.status == CertificateStatus.EXPIRED:
+                expired += 1
+
+        except Exception as err:
+
+            error += 1
+
+            logger.error(
+                f"[{cert['name']}] {err}"
+            )
+
+    logger.info(
+        f"[Summary] "
+        f"Total={total}, "
+        f"Valid={valid}, "
+        f"Warning={warning}, "
+        f"Critical={critical}, "
+        f"Expired={expired}, "
+        f"Error={error}"
+    ) 
 
 
 

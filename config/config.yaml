@@ -1,5 +1,5 @@
 certificate:
-  warning_days: 45
+  warning_days: 30
   critical_days: 15
 
 backup:
@@ -11,8 +11,20 @@ backup:
 certificates:
   - name: dms-dev
     path: certs/dev/dms-dev.mpi-apps.co.id
+    certbot_name: dms-dev.mpi-apps.co.id
     source_path: certs/dev/dms-dev.mpi-apps.co.id/fullchain.pem
 
   - name: wms-prod
     path: certs/prod/wms.mpi-apps.co.id
+    certbot_name: wms.mpi-apps.co.id
     source_path: certs/prod/wms.mpi-apps.co.id/fullchain.pem
+
+renew:
+  dry_run: false
+  timeout: 300
+
+servers:
+  - name: bizhop-dev
+    host: 103.82.241.128
+    username: root
+    certbot_command: certbot

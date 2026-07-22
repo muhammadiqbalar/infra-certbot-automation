@@ -1,0 +1,124 @@
+import argparse
+from pathlib import Path
+from certbot.check import check_certificate
+from certbot.renew import run_renew
+from backup.backup import run_backup
+from utils.yaml_loader import load_yaml
+from utils.logger import setup_logger
+from utils.output import (
+    print_certificate,
+    print_error,
+    print_header,
+    print_summary,
+    
+)
+
+from models.summary import Summary
+from report.summary import (
+    update_summary,
+    update_error,
+    
+)
+import time
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+CONFIG_FILE = BASE_DIR / "config" / "config.yaml"
+
+
+logger = setup_logger()
+
+def run_check() -> None:
+    """
+    Check all certificate define in config YAML.
+    """
+    start_time = time.perf_counter()
+
+    logger.info("Starting certificate check")
+
+    config = load_yaml(CONFIG_FILE)
+    
+    summary = Summary ()
+
+    for cert in config["certificates"]:
+        print_header(cert["name"])
+
+        try:
+            cert_path = BASE_DIR / cert["source_path"]
+
+            logger.info(f"[{cert['name']}] Checking certificate")
+
+            info = check_certificate(cert_path)
+
+            update_summary(summary, info)
+
+            print_certificate(info)
+
+            logger.info(
+              f"[{cert['name']}] "
+              f"{info.status.value} "
+              f"({info.remaining_days} days remaining)"
+            )
+            
+            """logger.info(f"[{cert['name']}] Status: {info.status.value}")"""
+
+        except Exception as err:
+            update_error(summary)
+            logger.error(err)
+            print_error(err)
+        print()
+
+    print_summary(summary)
+
+    elapsed_time = time.perf_counter() - start_time
+
+    logger.info(
+     "[Summary] "
+     f"Total={summary.total}, "
+     f"Valid={summary.valid}, "
+     f"Warning={summary.warning}, "
+     f"Critical={summary.critical}, "
+     f"Expired={summary.expired}, "
+     f"Error={summary.error},"
+    )
+
+    logger.info(f"Certificate check completed successfully in {elapsed_time:.3f}s")
+
+def main() -> None:
+    """
+     Application entry point CLI.
+    """
+
+    parser = argparse.ArgumentParser(
+      description ="Infrastructure Certbot Automation"
+    )
+
+    subparser = parser.add_subparsers(dest="command", required=True)
+
+    subparser.add_parser(
+         "check",
+         help="Check certificate information"
+    )
+    
+    backup_parser = subparser.add_parser(
+        "backup",
+        help="Backup certificate"
+    )
+    
+    renew_parser = subparser.add_parser(
+         "renew",
+         help="Renew certificates"
+    )
+
+    args = parser.parse_args()
+
+    if args.command == "check":
+       run_check()
+    if args.command == "backup":
+       run_backup()
+    if args.command == "renew":
+       run_renew()
+
+if __name__ == "__main__":
+   main()
+
