@@ -1567,3 +1567,73 @@
 2026-07-22 15:28:23,792 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
 2026-07-22 15:28:24,254 | INFO | [wms-prod] Renewal completed successfully
 2026-07-22 15:28:24,255 | INFO | Renewal completed sucessfully (1 success, 0 failed, 1 skipped)
+2026-07-22 16:35:59,482 | INFO | Starting renewal planning
+2026-07-22 16:35:59,486 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:35:59,542 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:35:59,543 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:35:59,549 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:35:59,550 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:35:59,550 | INFO | Starting renewal execution
+2026-07-22 16:35:59,551 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:35:59,551 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:36:48,272 | INFO | Starting renewal planning
+2026-07-22 16:36:48,277 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:36:48,337 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:36:48,339 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:36:48,346 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:36:48,346 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:36:48,347 | INFO | Starting renewal execution
+2026-07-22 16:36:48,348 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:36:48,348 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:40:21,274 | INFO | Starting renewal planning
+2026-07-22 16:40:21,280 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:40:21,338 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:40:21,339 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:40:21,344 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:40:21,345 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:40:21,345 | INFO | Starting renewal execution
+2026-07-22 16:40:21,346 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:40:21,346 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:43:45,833 | INFO | Starting renewal planning
+2026-07-22 16:43:45,839 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:43:45,916 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:43:45,917 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:43:45,923 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:43:45,924 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:43:45,925 | INFO | Starting renewal execution
+2026-07-22 16:43:45,926 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:43:45,926 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:43:46,495 | INFO | [wms-prod] Renewal completed successfully
+2026-07-22 16:43:46,496 | INFO | Renewal completed sucessfully (1 success, 0 failed, 1 skipped)
+2026-07-22 16:53:18,466 | INFO | Starting renewal planning
+2026-07-22 16:53:18,472 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:53:18,531 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:53:18,532 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:53:18,539 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:53:18,539 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:53:18,540 | INFO | Starting renewal execution
+2026-07-22 16:53:18,540 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:53:18,541 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:54:21,375 | INFO | Starting renewal planning
+2026-07-22 16:54:21,381 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:54:21,443 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:54:21,444 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:54:21,450 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:54:21,451 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:54:21,451 | INFO | Starting renewal execution
+2026-07-22 16:54:21,452 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:54:21,453 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:56:04,040 | INFO | Starting renewal planning
+2026-07-22 16:56:04,046 | INFO | [dms-dev] Building renewal plan
+2026-07-22 16:56:04,115 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-22 16:56:04,116 | INFO | [wms-prod] Building renewal plan
+2026-07-22 16:56:04,128 | INFO | [wms-prod] -325 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-22 16:56:04,129 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-22 16:56:04,130 | INFO | Starting renewal execution
+2026-07-22 16:56:04,130 | INFO | [dms-dev] Renewal Skipped
+2026-07-22 16:56:04,131 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-22 16:56:04,639 | ERROR | [wms-prod] Renewal failed (Return Code =1)
+2026-07-22 16:56:04,641 | ERROR | Saving debug log to /var/log/letsencrypt/letsencrypt.log
+No certificate found with name wms.mpi-apps.co.id (expected /etc/letsencrypt/renewal/wms.mpi-apps.co.id.conf).
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+2026-07-22 16:56:04,641 | INFO | Renewal completed sucessfully (0 success, 1 failed, 1 skipped)

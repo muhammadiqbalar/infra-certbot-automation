@@ -7,11 +7,13 @@ from certbot.runner import LocalRunner
 
 from models.renewal_plan import RenewalPlan
 from models.renewal_action import RenewalAction
+from models.renewal_status import RenewalStatus
 from utils.logger import setup_logger
 from utils.yaml_loader import load_yaml
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
 CONFIG_FILE = BASE_DIR / "config" / "config.yaml"
 
 logger = setup_logger()
@@ -20,6 +22,10 @@ def run_renew() -> None:
     """
     Execute renewal planning.
     """
+    config = load_yaml(CONFIG_FILE)
+
+    renew_config = config["renew"]
+
     logger.info("Starting renewal planning")
 
     plans = build_renewal_plan()
@@ -40,13 +46,19 @@ def run_renew() -> None:
         result = execute_renewal(
           runner=runner,
           plan=plan,
+          renew_config=renew_config,
         )
-        if plan.action.value != "RENEW":
-            skipped += 1
-        elif result.success:
-            success += 1
+
+        if result.status == RenewalStatus.SUCCESS:
+
+           success += 1
+
+        elif result.status == RenewalStatus.SKIPPED:
+           skipped += 1
+
         else:
-            failed += 1
+           failed +=1
+
     print()
     print("=" * 60)
     print("Renewal Summary")

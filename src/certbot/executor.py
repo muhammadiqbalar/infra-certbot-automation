@@ -1,15 +1,16 @@
 from certbot.runner import BaseRunner
+from certbot.command_builder import build_certbot_command
 
 from models.renewal_action import RenewalAction
 from models.renewal_result import RenewalResult
 from models.renewal_plan import RenewalPlan
-
+from models.renewal_status import RenewalStatus
 
 from utils.logger import setup_logger
 
 logger=setup_logger()
 
-def execute_renewal(runner: BaseRunner, plan: RenewalPlan,) -> RenewalResult:
+def execute_renewal(runner: BaseRunner, plan: RenewalPlan, renew_config: dict,) -> RenewalResult:
     
     if plan.action != RenewalAction.RENEW:
        logger.info(
@@ -20,8 +21,9 @@ def execute_renewal(runner: BaseRunner, plan: RenewalPlan,) -> RenewalResult:
 
           name=plan.name,
           certbot_name=plan.certbot_name,
+          status=RenewalStatus.SKIPPED,
           success=True,
-          return_code=0,
+          return_code=1,
           stdout="Skipped",
           stderr="",
 
@@ -32,17 +34,26 @@ def execute_renewal(runner: BaseRunner, plan: RenewalPlan,) -> RenewalResult:
       f"({plan.certbot_name})"
     )
 
-
-    result = runner.run(
-       [
-         "sudo",
-         "certbot",
-         "renew",
-       ]
+    command = build_certbot_command(
+       renew_config=renew_config,
+       certbot_name=plan.certbot_name,
     )
+    result = runner.run(command)
+
     if result.success:
        logger.info(
          f"[{plan.name}] Renewal completed successfully"
+       )
+       return RenewalResult(
+
+          name=plan.name,
+          certbot_name=plan.certbot_name,
+          status=RenewalStatus.SUCCESS,
+          success=True,
+          return_code=result.return_code,
+          stdout=result.stdout,
+          stderr=result.stderr,
+
        )
     else:
       logger.error(
@@ -57,7 +68,8 @@ def execute_renewal(runner: BaseRunner, plan: RenewalPlan,) -> RenewalResult:
     return RenewalResult(
        name=plan.name,
        certbot_name=plan.certbot_name,
-       success=result.return_code == 0,
+       status=RenewalStatus.FAILED,
+       success=False,
        return_code=result.return_code,
        stdout=result.stdout,
        stderr=result.stderr,

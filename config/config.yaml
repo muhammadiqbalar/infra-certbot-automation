@@ -20,8 +20,11 @@ certificates:
     source_path: certs/prod/wms.mpi-apps.co.id/fullchain.pem
 
 renew:
-  dry_run: false
+  enabled: true
+  dry_run: true
   timeout: 300
+  command: certbot
+
 
 servers:
   - name: bizhop-dev
