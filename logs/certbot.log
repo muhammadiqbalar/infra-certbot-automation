@@ -1637,3 +1637,45 @@
 No certificate found with name wms.mpi-apps.co.id (expected /etc/letsencrypt/renewal/wms.mpi-apps.co.id.conf).
 Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
 2026-07-22 16:56:04,641 | INFO | Renewal completed sucessfully (0 success, 1 failed, 1 skipped)
+2026-07-23 08:41:12,101 | INFO | Starting renewal planning
+2026-07-23 08:41:12,125 | INFO | [dms-dev] Building renewal plan
+2026-07-23 08:41:12,452 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-23 08:41:12,454 | INFO | [wms-prod] Building renewal plan
+2026-07-23 08:41:12,475 | INFO | [wms-prod] -326 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-23 08:41:12,477 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-23 08:41:12,479 | INFO | Starting renewal execution
+2026-07-23 08:41:12,481 | INFO | [dms-dev] Renewal Skipped
+2026-07-23 08:41:12,483 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-23 08:41:14,772 | ERROR | [wms-prod] Renewal failed (Return Code =1)
+2026-07-23 08:41:14,773 | ERROR | Saving debug log to /var/log/letsencrypt/letsencrypt.log
+No certificate found with name wms.mpi-apps.co.id (expected /etc/letsencrypt/renewal/wms.mpi-apps.co.id.conf).
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+2026-07-23 08:41:14,775 | WARNING | Renewal completed sucessfully (0 success, 1 failed, 1 skipped)
+2026-07-23 08:42:00,948 | INFO | Starting renewal planning
+2026-07-23 08:42:00,965 | INFO | [dms-dev] Building renewal plan
+2026-07-23 08:42:01,302 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-23 08:42:01,306 | INFO | [wms-prod] Building renewal plan
+2026-07-23 08:42:01,345 | INFO | [wms-prod] -326 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-23 08:42:01,348 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-23 08:42:01,351 | INFO | Starting renewal execution
+2026-07-23 08:42:01,355 | INFO | [dms-dev] Renewal Skipped
+2026-07-23 08:42:01,359 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-23 08:42:03,669 | ERROR | [wms-prod] Renewal failed (Return Code =1)
+2026-07-23 08:42:03,671 | ERROR | Saving debug log to /var/log/letsencrypt/letsencrypt.log
+No certificate found with name wms.mpi-apps.co.id (expected /etc/letsencrypt/renewal/wms.mpi-apps.co.id.conf).
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+2026-07-23 08:42:03,672 | WARNING | Renewal completed with errors (0 success, 1 failed, 1 skipped)
+2026-07-23 08:53:07,412 | INFO | Starting renewal planning
+2026-07-23 08:53:07,437 | INFO | [dms-dev] Building renewal plan
+2026-07-23 08:53:07,733 | INFO | [dms-dev] 39 days remaining | Authenticator=unknown | Action=SKIP
+2026-07-23 08:53:07,735 | INFO | [wms-prod] Building renewal plan
+2026-07-23 08:53:07,774 | INFO | [wms-prod] -326 days remaining | Authenticator=unknown | Action=RENEW
+2026-07-23 08:53:07,776 | INFO | Renewal planning completed (2 certificate(s))
+2026-07-23 08:53:07,778 | INFO | Starting renewal execution
+2026-07-23 08:53:07,782 | INFO | [dms-dev] Renewal Skipped
+2026-07-23 08:53:07,785 | INFO | [wms-prod] Executing renewal (wms.mpi-apps.co.id)
+2026-07-23 08:53:09,952 | ERROR | [wms-prod] Renewal failed (Return Code =1)
+2026-07-23 08:53:09,955 | ERROR | Saving debug log to /var/log/letsencrypt/letsencrypt.log
+No certificate found with name wms.mpi-apps.co.id (expected /etc/letsencrypt/renewal/wms.mpi-apps.co.id.conf).
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+2026-07-23 08:53:09,956 | WARNING | Renewal completed with errors (0 success, 1 failed, 1 skipped)

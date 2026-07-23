@@ -3,7 +3,7 @@ from certbot.executor import execute_renewal
 from certbot.renewal_header import read_authenticator
 from certbot.renewal_planner import build_renewal_plan
 from certbot.check import check_certificate
-from certbot.runner import LocalRunner
+from certbot.local_runner import LocalRunner
 
 from models.renewal_plan import RenewalPlan
 from models.renewal_action import RenewalAction
@@ -69,12 +69,19 @@ def run_renew() -> None:
     print(f"Skipped   : {skipped}")
     print("=" * 60)
     print()
-
-    logger.info(
-       f"Renewal completed sucessfully "
-       f"({success} success, "
-       f"{failed} failed, "
-       f"{skipped} skipped)"
-    )    
+    if  failed ==0:
+        logger.info(
+           f"Renewal completed successfully "
+           f"({success} success, "
+           f"{failed} failed, "
+           f"{skipped} skipped)"
+        )
+    else:
+        logger.warning(
+           f"Renewal completed with errors "
+           f"({success} success, "
+           f"{failed} failed, "
+           f"{skipped} skipped)"
+        )    
 
 
