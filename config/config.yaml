@@ -29,5 +29,20 @@ renew:
 servers:
   - name: bizhop-dev
     host: 103.82.241.128
+    port: 8288
     username: root
-    certbot_command: certbot
+    auth:
+      type: password
+      password_env: exabytes_password
+    timeout: 30
+
+  - name: wms-prod
+    host: 192.9.166.195
+    port: 22
+    username: opc
+    auth:
+      type: key
+      private_key: /home/iqbal/ssh/apex.ppk
+    timeout: 30
+
+
